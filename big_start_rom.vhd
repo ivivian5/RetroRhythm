@@ -2,9 +2,9 @@ library IEEE;
                 use IEEE.std_logic_1164.all;
                 use IEEE.numeric_std.all;
 
-entity rom is
-                	port(
-                		\outglobal_o : in std_logic;
+entity rom is 
+                 	port(
+                		outglobal_o : in std_logic;
                 		addr_x : in std_logic_vector(7 downto 0);
                 		addr_y : in std_logic_vector(7 downto 0);
                 		data : out std_logic_vector(5 downto 0) -- 6-bit words, RRGGBB
@@ -19225,3 +19225,4 @@ entity rom is
               		end if; 
               	end process; 
               end;
+			
