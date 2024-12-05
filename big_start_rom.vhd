@@ -4,7 +4,7 @@ library IEEE;
 
 entity rom is
                 	port(
-                		clk : in std_logic;
+                		\outglobal_o : in std_logic;
                 		addr_x : in std_logic_vector(7 downto 0);
                 		addr_y : in std_logic_vector(7 downto 0);
                 		data : out std_logic_vector(5 downto 0) -- 6-bit words, RRGGBB
@@ -17,8 +17,8 @@ entity rom is
                 begin
                 	addr (15 downto 8) <= addr_x;
                 	addr (7 downto 0) <= addr_y;
-                	process(clk) begin
-                		if rising_edge(clk) then
+                	process(outglobal_o) begin
+                		if rising_edge(outglobal_o) then
                 			case addr is
 				when "0000000000000000" => data <= "010101";
 				when "0000000100000000" => data <= "010101";
