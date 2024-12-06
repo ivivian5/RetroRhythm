@@ -16,8 +16,14 @@ begin
     process(valid, row, column)
     begin
         if valid = '1' then
-            if to_integer(unsigned(column)) < 320 then
-                rgb <= "111111";  
+            if to_integer(unsigned(column)) > left_arr_xpos - 1 and to_integer(unsigned(column)) < left_arr_xpos + 60 and arrows_spawned(0) = '1' then
+                rgb <= left_arr_rom_data;  
+            elsif to_integer(unsigned(column)) > top_arr_xpos - 1 and to_integer(unsigned(column)) < top_arr_xpos + 60 and arrows_spawned(1) = '1' then
+                rgb <= top_arr_rom_data;
+            elsif to_integer(unsigned(column)) > right_arr_xpos - 1 and to_integer(unsigned(column)) < right_arr_xpos + 60 and arrows_spawned(2) = '1' then
+                rgb <= right_arr_rom_data;
+            elsif to_integer(unsigned(column)) > down_arr_xpos - 1 and to_integer(unsigned(column)) < down_arr_xpos + 60 and arrows_spawned(3) = '1' then
+                rgb <= right_arr_rom_data;
             else
                 rgb <= "000000"; 
             end if;
