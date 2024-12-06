@@ -17,13 +17,13 @@ begin
     begin
         if valid = '1' then
             if to_integer(unsigned(row)) > left_arr_xpos - 1 and to_integer(unsigned(row)) < left_arr_xpos + 60 and to_integer(unsigned(column)) > left_arr_ypos - 1 and to_integer(unsigned(column)) > left_arr_ypos + 60 and arrows_spawned(0) = '1' then
-                rgb <= left_arr_rom_data;  
+                rgb <= rom_arrow_1;  
             elsif to_integer(unsigned(row)) > top_arr_xpos - 1 and to_integer(unsigned(row)) < top_arr_xpos + 60 and to_integer(unsigned(column)) > top_arr_ypos - 1 and to_integer(unsigned(column)) > top_arr_ypos + 60 and arrows_spawned(0) = '1' then
-                rgb <= top_arr_rom_data;
+                rgb <= rom_arrow_2;
             elsif to_integer(unsigned(row)) > right_arr_xpos - 1 and to_integer(unsigned(row)) < right_arr_xpos + 60 and to_integer(unsigned(column)) > right_arr_ypos - 1 and to_integer(unsigned(column)) > right_arr_ypos + 60 and arrows_spawned(0) = '1' then
-                rgb <= right_arr_rom_data;
+                rgb <= rom_arrow_3;
             elsif to_integer(unsigned(row)) > down_arr_xpos - 1 and to_integer(unsigned(row)) < down_arr_xpos + 60 and to_integer(unsigned(column)) > down_arr_ypos - 1 and to_integer(unsigned(column)) > down_arr_ypos + 60 and arrows_spawned(0) = '1'  then
-                rgb <= down_arr_rom_data;
+                rgb <= rom_arrow_4;
             else
                 rgb <= "000000"; 
             end if;
