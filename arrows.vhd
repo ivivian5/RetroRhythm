@@ -8,13 +8,9 @@ entity arrows is
 	port(
 		arrows_clk : in std_logic;
 		arrows_spawned : out std_logic_vector(3 downto 0);
-		left_arr_xpos : out std_logic_vector(9 downto 0);
 		left_arr_ypos : out std_logic_vector(9 downto 0);
-		top_arr_xpos : out std_logic_vector(9 downto 0);
 		top_arr_ypos : out std_logic_vector(9 downto 0);
-		right_arr_xpos : out std_logic_vector(9 downto 0);
 		right_arr_ypos : out std_logic_vector(9 downto 0);
-		down_arr_xpos : out std_logic_vector(9 downto 0);
 		down_arr_ypos : out std_logic_vector(9 downto 0);
 	);
 end vga;
@@ -25,10 +21,6 @@ constant fallspeed: integer := 1;
 constant bottom_edge: integer := 480;
 
 begin
-	left_arr_xpos <= ;--100
-	top_arr_xpos <= ;-- 220
-	right_arr_xpos <= ;-- 340
-	down_arr_xpos <= ;--460
 	process (arrows_clk) begin
         if rising_edge(arrows_clk) then
 			counter <= std_logic_vector(unsigned(counter) + 1);
