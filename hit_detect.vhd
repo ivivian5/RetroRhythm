@@ -16,7 +16,7 @@ entity scoring is
 		down_arr_ypos : in std_logic_vector(9 downto 0);
 		
 		p1_score : out std_logic_vector(9 downto 0);
-		p2_score : out std_logic_vector(9 downto 0);
+		p2_score : out std_logic_vector(9 downto 0)
 	);
 end scoring;
 
