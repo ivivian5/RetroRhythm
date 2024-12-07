@@ -18,7 +18,7 @@ entity scoring is
 		p1_score : out std_logic_vector(9 downto 0);
 		p2_score : out std_logic_vector(9 downto 0);
 	);
-end vga;
+end scoring;
 
 architecture synth of scoring is
 	signal score1 : std_logic_vector(9 downto 0);
