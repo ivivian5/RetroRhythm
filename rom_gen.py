@@ -1,21 +1,16 @@
 from PIL import Image
 
-im = Image.open('startscreen.png', 'r')
+name = "arrow1"
+
+im = Image.open('end_screen.jpeg', 'r')
 im = im.convert("RGB")
 width, height = im.size
 pixel_vals = list(im.getdata())
-pixel_values = list(map(lambda pix: (bin(int(round(pix[0] / 85, 0)))[2:],
-                                     bin(int(round(pix[1] / 85, 0)))[2:],
-                                     bin(int(round(pix[2] / 85, 0)))[2:]), 
+pixel_values = list(map(lambda pix: (format(int(round((pix[0] / 255) * 3, 0)), '02b')+
+                                     format(int(round((pix[1] / 255) * 3, 0)), '02b')+
+                                     format(int(round((pix[2] / 255) * 3, 0)), '02b')), 
                     pixel_vals))
-
-incl_lead_zero = lambda rgb_val: "00" if rgb_val == "0" else "01" if rgb_val == "1" else rgb_val
-
-pixel_values = list(map(lambda pix: (incl_lead_zero(pix[0])+
-                                     incl_lead_zero(pix[1])+
-                                     incl_lead_zero(pix[2])), 
-                    pixel_values))
-
+print(pixel_values)
 ################## MAKING DUMP FILE ########################################
 # output = open("dump-startscreen.txt", "w") 
 
@@ -27,28 +22,37 @@ pixel_values = list(map(lambda pix: (incl_lead_zero(pix[0])+
 
 ################## MAKING VHDL FILE ########################################
 
-output = open("start_rom.vhd", "w") 
+output = open("endscreen.vhd", "w") 
 
 output.write(  "library IEEE;\n\
                 use IEEE.std_logic_1164.all;\n\
                 use IEEE.numeric_std.all;\n\n")
 
-output.write(  "entity rom is\n\
+
+
+output.write(  "entity endscreen is \n \
                 \tport(\n\
-                \t\tclk : in std_logic;\n\
-                \t\taddr : in std_logic_vector(3 downto 0); -- 16 words total\n\
+                \t\toutglobal_o : in std_logic;\n\
+                \t\taddr_x : in std_logic_vector(7 downto 0);\n\
+                \t\taddr_y : in std_logic_vector(7 downto 0);\n\
                 \t\tdata : out std_logic_vector(5 downto 0) -- 6-bit words, RRGGBB\n\
                 \t);\n\
                 end;\n\n\
-                architecture sim of rom is\n\
+                architecture sim of endscreen is\n\
+                signal addr : std_logic_vector(15 downto 0);\n\n\
                 begin\n\
-                \tprocess(clk) begin\n\
-                \t\tif rising_edge(clk) then\n\
+                \taddr (15 downto 8) <= addr_x;\n\
+                \taddr (7 downto 0) <= addr_y;\n\
+                \tprocess(outglobal_o) begin\n\
+                \t\tif rising_edge(outglobal_o) then\n\
                 \t\t\tcase addr is\n")
 
-for i in range(width * height):
-    output.write(("\t\t\t\twhen \"" + format(i,'012b') + "\" => data <= \"" +
-                  str(pixel_values[i]) + "\";\n"))
+for i in range(height):
+    for j in range(width):
+        if str(pixel_values[(i*width + j)]) != "000000":
+            output.write(("\t\t\t\twhen \"" + format(i,'08b') + format(j,'08b')
+                            + "\" => data <= \"" +
+                            str(pixel_values[(i*width + j)]) + "\";\n"))
 
 output.write("\t\t\t\twhen others => data <= \"000000\";\n")
 output.write("\t\t\tend case;\n\
