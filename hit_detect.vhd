@@ -29,24 +29,25 @@ architecture synth of scoring is
 begin
 	process (score_clk) begin
         if rising_edge(score_clk) then
-			score1 <= std_logic_vector(unsigned(score1) + 1) 
-						when (arrows_spawned(3) = '1' and p1_keyhit(3) = '1' and 
-								left_arr_ypos > top_hitbox and left_arr_ypos < bot_hitbox)
-						or (arrows_spawned(2) = '1' and p1_keyhit(2) = '1' and 
-								top_arr_ypos > top_hitbox and top_arr_ypos < bot_hitbox)
-						or (arrows_spawned(1) = '1' and p1_keyhit(1) = '1' and 
-								right_arr_ypos > top_hitbox and right_arr_ypos < bot_hitbox)
-						or (arrows_spawned(0) = '1' and p1_keyhit(0) = '1' and 
-								down_arr_ypos > top_hitbox and down_arr_ypos < bot_hitbox)
-			score2 <= std_logic_vector(unsigned(score2) + 1) 
-						when (arrows_spawned(3) = '1' and p2_keyhit(3) = '1' and 
-								left_arr_ypos > top_hitbox and left_arr_ypos < bot_hitbox)
+			if (arrows_spawned(3) = '1' and p1_keyhit(3) = '1' and to_integer(unsigned(left_arr_ypos)) > top_hitbox and to_integer(unsigned(left_arr_ypos)) < bot_hitbox)
+								or (arrows_spawned(2) = '1' and p1_keyhit(2) = '1' and 
+								to_integer(unsigned(top_arr_ypos)) > top_hitbox and to_integer(unsigned(top_arr_ypos)) < bot_hitbox)
+								or (arrows_spawned(1) = '1' and p1_keyhit(1) = '1' and 
+								to_integer(unsigned(right_arr_ypos)) > top_hitbox and to_integer(unsigned(right_arr_ypos)) < bot_hitbox)
+								or (arrows_spawned(0) = '1' and p1_keyhit(0) = '1' and 
+								to_integer(unsigned(down_arr_ypos)) > top_hitbox and to_integer(unsigned(down_arr_ypos)) < bot_hitbox) then
+			score1 <= std_logic_vector(unsigned(score1) + 1);
+			end if;
+			if (arrows_spawned(3) = '1' and p2_keyhit(3) = '1' and 
+								to_integer(unsigned(left_arr_ypos)) > top_hitbox and to_integer(unsigned(left_arr_ypos)) < bot_hitbox)
 						or (arrows_spawned(2) = '1' and p2_keyhit(2) = '1' and 
-								top_arr_ypos > top_hitbox and top_arr_ypos < bot_hitbox)
+								to_integer(unsigned(top_arr_ypos)) > top_hitbox and to_integer(unsigned(top_arr_ypos)) < bot_hitbox)
 						or (arrows_spawned(1) = '1' and p2_keyhit(1) = '1' and 
-								right_arr_ypos > top_hitbox and right_arr_ypos < bot_hitbox)
+								to_integer(unsigned(right_arr_ypos)) > top_hitbox and to_integer(unsigned(right_arr_ypos)) < bot_hitbox)
 						or (arrows_spawned(0) = '1' and p2_keyhit(0) = '1' and 
-								down_arr_ypos > top_hitbox and down_arr_ypos < bot_hitbox)
+								to_integer(unsigned(down_arr_ypos)) > top_hitbox and to_integer(unsigned(down_arr_ypos)) < bot_hitbox) then
+			score2 <= std_logic_vector(unsigned(score2) + 1);
+			end if;
 			p1_score <= score1;
 			p2_score <= score2;
 		end if;
