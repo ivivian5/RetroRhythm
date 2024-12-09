@@ -1,9 +1,0 @@
--ver "C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/top.vhd" "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/vga.vhd" "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/pattern_gen.vhd" "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/FSM.vhd" "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/ROM.vhd" "C:/Users/jonekath/Desktop/start_screen.vhd" "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/pattern_gen2.vhd" "C:/Users/jonekath/Desktop/NESControllers.vhd" "C:/Users/jonekath/Desktop/arrows.vhd" "C:/Users/jonekath/Desktop/top_arr_rom.vhd" "C:/Users/jonekath/Desktop/right_arr_rom.vhd" "C:/Users/jonekath/Desktop/left_arr_rom.vhd" "C:/Users/jonekath/Desktop/down_arr_rom.vhd" "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/arrows_on2008.vhd" "C:/Users/jonekath/Desktop/hit_detect.vhd" "C:/Users/jonekath/Desktop/top_out.vhd" "C:/Users/jonekath/Desktop/right_out.vhd" "C:/Users/jonekath/Desktop/left_out.vhd" "C:/Users/jonekath/Desktop/down_out.vhd" "C:/Users/jonekath/Desktop/endscreen.vhd" "C:/Users/jonekath/Desktop/dig0_rom.vhd" "C:/Users/jonekath/Desktop/dig1_rom.vhd" "C:/Users/jonekath/Desktop/dig2_rom.vhd" "C:/Users/jonekath/Desktop/dig3_rom.vhd" "C:/Users/jonekath/Desktop/dig4_rom.vhd" "C:/Users/jonekath/Desktop/dig5_rom.vhd" "C:/Users/jonekath/Desktop/dig6_rom.vhd" "C:/Users/jonekath/Desktop/dig7_rom.vhd" "C:/Users/jonekath/Desktop/dig8_rom.vhd" "C:/Users/jonekath/Desktop/dig9_rom.vhd" "C:/Users/jonekath/Desktop/score_rom.vhd" "C:/Users/jonekath/Desktop/scoreword_rom.vhd" "C:/Users/jonekath/Desktop/playerp_rom.vhd"
--sdc "C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/arrows_on2008.ldc"
--path "C:/Users/jonekath/my_designs/VGA_Controller"
--top top
--isTop
--a "iCE40UP"
--t "iCE40UP5K"
