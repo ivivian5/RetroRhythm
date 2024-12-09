@@ -21,88 +21,88 @@
         <Source name="source/impl_1/ROM.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/start_screen.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
-        </Source>
         <Source name="source/impl_1/pattern_gen2.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
-        </Source>
-        <Source name="../../Desktop/NESControllers.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
-        </Source>
-        <Source name="../../Desktop/arrows.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
-        </Source>
-        <Source name="../../Desktop/top_arr_rom.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
-        </Source>
-        <Source name="../../Desktop/right_arr_rom.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
-        </Source>
-        <Source name="../../Desktop/left_arr_rom.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
-        </Source>
-        <Source name="../../Desktop/down_arr_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
         <Source name="source/impl_1/arrows_on2008.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/hit_detect.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/big_start_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/top_out.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig0_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/right_out.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig1_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/left_out.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig2_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/down_out.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig3_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/endscreen.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig4_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig0_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig5_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig1_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig6_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig2_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig7_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig3_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig8_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig4_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/dig9_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig5_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/down_arr_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig6_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/down_out.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig7_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/endscreen.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig8_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/hit_detect.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/dig9_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/left_arr_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/score_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/left_out.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/scoreword_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/NESControllers.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../Desktop/playerp_rom.vhd" type="VHDL" type_short="VHDL">
+        <Source name="source/impl_1/playerp_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/right_arr_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/right_out.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/score_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/scoreword_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/start_screen.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/top_arr_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/top_out.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
         <Source name="pins.pdc" type="Physical Constraints File" type_short="PDC">
