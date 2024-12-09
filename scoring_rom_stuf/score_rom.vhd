@@ -15,8 +15,8 @@ entity score_rom is
 
 architecture sim of score_rom is
     signal addr : std_logic_vector(15 downto 0);
-    signal u_addr_x : unsigned(7 downto 0);
-    signal u_addr_y : unsigned(7 downto 0);
+    signal u_addr_x : unsigned(9 downto 0);
+    signal u_addr_y : unsigned(9 downto 0);
 
     constant p1_player_xpos: integer := 16;
     constant p1_num_xpos:    integer := 36;
