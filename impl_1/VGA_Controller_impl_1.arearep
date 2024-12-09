@@ -1,0 +1,335 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  343 of 5280 (6.496%)
+I/O cells:      14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2       152          100.0
+                            FD1P3XZ       343          100.0
+                                 IB         3          100.0
+                              IOL_B         4          100.0
+                               LUT4      3893          100.0
+                                 OB        11          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+                                FSM         1
+                                NES         1
+                             arrow1         1
+                             arrow2         1
+                             arrow3         1
+                             arrow4         1
+                             arrows         1
+                       down_outline         1
+                          endscreen         1
+                       left_outline         1
+                              mypll         1
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                          num0_disp         1
+                          num1_disp         1
+                          num2_disp         1
+                          num3_disp         1
+                          num4_disp         1
+                          num5_disp         1
+                          num6_disp         1
+                          num7_disp         1
+                          num8_disp         1
+                          num9_disp         1
+                        pattern_gen         1
+                        player_disp         1
+                      right_outline         1
+                                rom         1
+                         score_disp         1
+                          score_rom         1
+                            scoring         1
+                        top_outline         1
+                                vga         1
+                              TOTAL      4438
+----------------------------------------------------------------------
+Report for cell pattern_gen.v1
+Instance Path : pattern_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        99           65.1
+                            FD1P3XZ        93           27.1
+                               LUT4      3712           95.4
+SUB MODULES
+                             arrow1         1
+                             arrow2         1
+                             arrow3         1
+                             arrow4         1
+                       down_outline         1
+                          endscreen         1
+                       left_outline         1
+                          num0_disp         1
+                          num1_disp         1
+                          num2_disp         1
+                          num3_disp         1
+                          num4_disp         1
+                          num5_disp         1
+                          num6_disp         1
+                          num7_disp         1
+                          num8_disp         1
+                          num9_disp         1
+                        player_disp         1
+                      right_outline         1
+                                rom         1
+                         score_disp         1
+                          score_rom         1
+                        top_outline         1
+                              TOTAL      3927
+----------------------------------------------------------------------
+Report for cell top_outline.v1
+Instance Path : pattern_inst.mytopout
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1            0.3
+                               LUT4        30            0.8
+                              TOTAL        31
+----------------------------------------------------------------------
+Report for cell score_rom.v1
+Instance Path : pattern_inst.myscore
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10            6.6
+                            FD1P3XZ        64           18.7
+                               LUT4       532           13.7
+SUB MODULES
+                          num0_disp         1
+                          num1_disp         1
+                          num2_disp         1
+                          num3_disp         1
+                          num4_disp         1
+                          num5_disp         1
+                          num6_disp         1
+                          num7_disp         1
+                          num8_disp         1
+                          num9_disp         1
+                        player_disp         1
+                         score_disp         1
+                              TOTAL       618
+----------------------------------------------------------------------
+Report for cell score_disp.v1
+Instance Path : pattern_inst.myscore.score_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4        75            1.9
+                              TOTAL        77
+----------------------------------------------------------------------
+Report for cell player_disp.v1
+Instance Path : pattern_inst.myscore.player_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4        44            1.1
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell num9_disp.v1
+Instance Path : pattern_inst.myscore.num9_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         1            0.0
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell num8_disp.v1
+Instance Path : pattern_inst.myscore.num8_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         1            0.0
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell num7_disp.v1
+Instance Path : pattern_inst.myscore.num7_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         6            0.2
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell num6_disp.v1
+Instance Path : pattern_inst.myscore.num6_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell num5_disp.v1
+Instance Path : pattern_inst.myscore.num5_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell num4_disp.v1
+Instance Path : pattern_inst.myscore.num4_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         3            0.1
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell num3_disp.v1
+Instance Path : pattern_inst.myscore.num3_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell num2_disp.v1
+Instance Path : pattern_inst.myscore.num2_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         5            0.1
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell num1_disp.v1
+Instance Path : pattern_inst.myscore.num1_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         4            0.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell num0_disp.v1
+Instance Path : pattern_inst.myscore.num0_disp_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4         1            0.0
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell rom.v1
+Instance Path : pattern_inst.myrom
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         5            1.5
+                               LUT4      1042           26.8
+                              TOTAL      1047
+----------------------------------------------------------------------
+Report for cell right_outline.v1
+Instance Path : pattern_inst.myrightout
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1            0.3
+                               LUT4        35            0.9
+                              TOTAL        36
+----------------------------------------------------------------------
+Report for cell left_outline.v1
+Instance Path : pattern_inst.myleftout
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1            0.3
+                               LUT4        32            0.8
+                              TOTAL        33
+----------------------------------------------------------------------
+Report for cell endscreen.v1
+Instance Path : pattern_inst.myend
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         6            1.7
+                               LUT4      1718           44.1
+                              TOTAL      1724
+----------------------------------------------------------------------
+Report for cell down_outline.v1
+Instance Path : pattern_inst.mydownout
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1            0.3
+                               LUT4        29            0.7
+                              TOTAL        30
+----------------------------------------------------------------------
+Report for cell arrow4.v1
+Instance Path : pattern_inst.myarrow4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4        37            1.0
+                              TOTAL        39
+----------------------------------------------------------------------
+Report for cell arrow3.v1
+Instance Path : pattern_inst.myarrow3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4        30            0.8
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell arrow2.v1
+Instance Path : pattern_inst.myarrow2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4        23            0.6
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell arrow1.v1
+Instance Path : pattern_inst.myarrow1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            0.6
+                               LUT4        27            0.7
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell vga.v1
+Instance Path : vga_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12            7.9
+                            FD1P3XZ        41           12.0
+                              IOL_B         2           50.0
+                               LUT4        38            1.0
+                              TOTAL        93
+----------------------------------------------------------------------
+Report for cell NES.v1
+Instance Path : NESControllers
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        11            7.2
+                            FD1P3XZ        33            9.6
+                              IOL_B         2           50.0
+                               LUT4        17            0.4
+                              TOTAL        63
+----------------------------------------------------------------------
+Report for cell arrows.v1
+Instance Path : arrows_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        30           19.7
+                            FD1P3XZ        92           26.8
+                               LUT4        10            0.3
+                              TOTAL       132
+----------------------------------------------------------------------
+Report for cell FSM.v1
+Instance Path : fsm_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         4            1.2
+                               LUT4         6            0.2
+                              TOTAL        10
+----------------------------------------------------------------------
+Report for cell mypll.v1
+Instance Path : pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : pll_inst.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell scoring.v1
+Instance Path : scoring_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        80           23.3
+                               LUT4       110            2.8
+                              TOTAL       190

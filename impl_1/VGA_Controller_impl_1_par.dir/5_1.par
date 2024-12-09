@@ -1,0 +1,33 @@
+
+Lattice Place and Route Report for Design "VGA_Controller_impl_1_map.udb"
+Mon Dec  9 14:27:15 2024
+
+PAR: Place And Route Radiant Software (64-bit) 2024.1.0.34.2.
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
+	VGA_Controller_impl_1_map.udb VGA_Controller_impl_1_par.dir/5_1.udb 
+
+Loading VGA_Controller_impl_1_map.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2024.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+Constraint Summary
+   Total number of constraints: 16
+   Total number of constraints dropped: 0
+
+WARNING <70001944> - par: No source clock for
+	generated clock	create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING <70001944> - par: No source clock for
+	generated clock	create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+
+WARNING: Database constraint "create_generated_clock -name {pll_c} -source [get_pins pll_inst.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins pll_inst.lscc_pll_inst.u_PLL_B/OUTCORE]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
+Number of Signals: 4922
+Number of Connections: 15980
