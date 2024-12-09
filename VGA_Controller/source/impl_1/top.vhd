@@ -34,7 +34,8 @@ architecture synth of top is
             VSYNC: out std_logic;
             pixel_x: out std_logic_vector(9 downto 0);
             pixel_y: out std_logic_vector(9 downto 0);
-            valid: out std_logic
+            valid: out std_logic;
+            game_clock  : out std_logic
         );
     end component;
 
@@ -114,6 +115,8 @@ architecture synth of top is
 	);
 	end component;
 
+
+    signal game_clock: std_logic;
     signal outglobal_o: std_logic;  
     signal valid: std_logic;  
     signal pixel_x: std_logic_vector(9 downto 0); 
@@ -155,7 +158,8 @@ begin
             VSYNC => VSYNC,             
             valid => valid,             
             pixel_x => pixel_x,                 
-            pixel_y => pixel_y            
+            pixel_y => pixel_y,
+            game_clock => game_clock
         );
 
     pattern_inst : pattern_gen
@@ -163,7 +167,7 @@ begin
 			p1_score_digs => p1_score,
 			p2_score_digs => p2_score,
 			flag => flag,
-			outglobal_o => outglobal_o,
+			outglobal_o => game_clock,
 			pixel_y => pixel_x,                  
             pixel_x => pixel_y,
 			arrows_spawned => arrows_spawned,
@@ -196,7 +200,7 @@ begin
 			start => start,
             controller1 => controller1,           
             controller2 => controller2,  
-            outglobal_o => outglobal_o,      
+            outglobal_o => game_clock,      
             flag => flag                    
         );
 
@@ -212,7 +216,7 @@ begin
 		
 	scoring_inst : scoring
 		port map(
-			score_clk => outglobal_o,
+			score_clk => game_clock,
 			p1_keyhit => controller1,
 			p2_keyhit => controller2,
 			arrows_spawned => arrows_spawned,
