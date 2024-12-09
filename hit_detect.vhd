@@ -1,3 +1,4 @@
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
@@ -49,13 +50,13 @@ begin
                     score1_1 <= score1_1 + 1;
                 end if;
                 if (score1_3 = 10 and not (score1_2 = 10)) then
-                    score1_2 <= score1_2 + 1
+                    score1_2 <= score1_2 + 1;
                 end if;
                 if (score1_4 = 10 and not (score1_3 = 10)) then
-                    score1_3 <= score1_3 + 1
+                    score1_3 <= score1_3 + 1;
                 end if;
                 if (score1_5 = 10 and not (score1_4 = 10)) then
-                    score1_4 <= score1_4 + 1
+                    score1_4 <= score1_4 + 1;
                 end if;
                 if not(score1_5 = 10) then
                     score1_5 <= score1_5 + 1;
@@ -75,13 +76,13 @@ begin
                     score2_1 <= score2_1 + 1;
                 end if;
                 if (score2_3 = 10 and not (score2_2 = 10)) then
-                    score2_2 <= score2_2 + 1
+                    score2_2 <= score2_2 + 1;
                 end if;
                 if (score2_4 = 10 and not (score2_3 = 10)) then
-                    score2_3 <= score2_3 + 1
+                    score2_3 <= score2_3 + 1;
                 end if;
                 if (score2_5 = 10 and not (score2_4 = 10)) then
-                    score2_4 <= score2_4 + 1
+                    score2_4 <= score2_4 + 1;
                 end if;
                 if not(score2_5 = 10) then
                     score2_5 <= score2_5 + 1;
