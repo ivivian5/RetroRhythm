@@ -1,0 +1,534 @@
+synthesis:  version Radiant Software (64-bit) 2024.1.0.34.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Dec  8 22:58:47 2024
+
+
+Command Line:  C:\lscc\radiant\2024.1\ispfpga\bin\nt64\synthesis.exe -f VGA_Controller_impl_1_lattice.synproj -logfile VGA_Controller_impl_1_lattice.srp -gui -msgset C:/Users/jonekath/my_designs/VGA_Controller/promote.xml 
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = VGA_Controller_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is VGA_Controller_impl_1_cpe.ldc.
+-path C:/Users/jonekath/my_designs/VGA_Controller (searchpath added)
+-path C:/Users/jonekath/my_designs/VGA_Controller/impl_1 (searchpath added)
+-path C:/Users/jonekath/my_designs/VGA_Controller/mypll (searchpath added)
+-path C:/lscc/radiant/2024.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = C:/Users/jonekath/my_designs/VGA_Controller/mypll/rtl/mypll.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/top.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/vga.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/pattern_gen.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/FSM.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/ROM.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/start_screen.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/pattern_gen2.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/NESControllers.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/arrows.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/top_arr_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/right_arr_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/left_arr_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/down_arr_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/arrows_on2008.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/hit_detect.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/top_out.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/right_out.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/left_out.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/down_out.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/endscreen.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig0_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig1_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig2_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig3_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig4_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig5_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig6_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig7_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig8_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/dig9_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/score_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/scoreword_rom.vhd
+VHDL library = work
+VHDL design file = C:/Users/jonekath/Desktop/playerp_rom.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file c:/users/jonekath/my_designs/vga_controller/mypll/rtl/mypll.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/top.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/top.vhd(20): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/vga.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/pattern_gen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/pattern_gen.vhd
+
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/fsm.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/fsm.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/fsm.vhd(5): analyzing entity fsm. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/fsm.vhd(17): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/rom.vhd
+
+Analyzing VHDL file c:/users/jonekath/desktop/start_screen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/start_screen.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/start_screen.vhd(6): analyzing entity rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/start_screen.vhd(15): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/pattern_gen2.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/pattern_gen2.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/pattern_gen2.vhd(5): analyzing entity pattern_gen. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/pattern_gen2.vhd(25): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/nescontrollers.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/nescontrollers.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/nescontrollers.vhd(5): analyzing entity nes. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/nescontrollers.vhd(21): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/arrows.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/arrows.vhd
+
+Analyzing VHDL file c:/users/jonekath/desktop/top_arr_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/top_arr_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/top_arr_rom.vhd(5): analyzing entity arrow2. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/top_arr_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/right_arr_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/right_arr_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/right_arr_rom.vhd(5): analyzing entity arrow3. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/right_arr_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/left_arr_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/left_arr_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/left_arr_rom.vhd(5): analyzing entity arrow1. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/left_arr_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/down_arr_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/down_arr_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/down_arr_rom.vhd(5): analyzing entity arrow4. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/down_arr_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/arrows_on2008.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/my_designs/vga_controller/source/impl_1/arrows_on2008.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/arrows_on2008.vhd(7): analyzing entity arrows. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/my_designs/vga_controller/source/impl_1/arrows_on2008.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/hit_detect.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/hit_detect.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/hit_detect.vhd(6): analyzing entity scoring. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/hit_detect.vhd(24): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/top_out.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/top_out.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/top_out.vhd(5): analyzing entity top_outline. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/top_out.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/right_out.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/right_out.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/right_out.vhd(5): analyzing entity right_outline. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/right_out.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/left_out.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/left_out.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/left_out.vhd(5): analyzing entity left_outline. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/left_out.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/down_out.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/down_out.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/down_out.vhd(5): analyzing entity down_outline. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/down_out.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/endscreen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/endscreen.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/endscreen.vhd(5): analyzing entity endscreen. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/endscreen.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig0_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig0_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig0_rom.vhd(5): analyzing entity num0_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig0_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig1_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig1_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig1_rom.vhd(5): analyzing entity num1_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig1_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig2_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig2_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig2_rom.vhd(5): analyzing entity num2_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig2_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig3_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig3_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig3_rom.vhd(5): analyzing entity num3_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig3_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig4_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig4_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig4_rom.vhd(5): analyzing entity num4_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig4_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig5_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig5_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig5_rom.vhd(5): analyzing entity num5_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig5_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig6_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig6_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig6_rom.vhd(5): analyzing entity num6_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig6_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig7_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig7_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig7_rom.vhd(5): analyzing entity num7_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig7_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig8_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig8_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig8_rom.vhd(5): analyzing entity num8_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig8_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/dig9_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/dig9_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/dig9_rom.vhd(5): analyzing entity num9_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/dig9_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/score_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/score_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/score_rom.vhd(5): analyzing entity score_rom. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/score_rom.vhd(16): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/scoreword_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/scoreword_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/scoreword_rom.vhd(5): analyzing entity score_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/scoreword_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file c:/users/jonekath/desktop/playerp_rom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/jonekath/desktop/playerp_rom.vhd
+
+INFO <35921012> - synthesis: c:/users/jonekath/desktop/playerp_rom.vhd(5): analyzing entity player_disp. VHDL-1012
+INFO <35921010> - synthesis: c:/users/jonekath/desktop/playerp_rom.vhd(14): analyzing architecture sim. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/jonekath/my_designs/VGA_Controller/impl_1". VHDL-1504
+Top module language type = VHDL.
+WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+Top module name (VHDL, mixed language): top
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING <35001771> - synthesis: Initial value found on net controller1[3] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net controller1[2] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net controller1[1] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net controller1[0] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net controller2[3] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net controller2[2] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net controller2[1] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net controller2[0] will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net start will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net restart will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net endgame will be ignored due to unrecognized driver type
+WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+WARNING <35931002> - synthesis: c:/users/jonekath/desktop/score_rom.vhd(18): net u_addr_x[7] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/jonekath/desktop/score_rom.vhd(19): net u_addr_y[7] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/jonekath/desktop/score_rom.vhd(42): net mapped_xpos[9] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/jonekath/desktop/score_rom.vhd(43): net mapped_ypos[9] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/jonekath/my_designs/vga_controller/mypll/rtl/mypll.v(139): net \pll_inst/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: c:/users/jonekath/my_designs/vga_controller/mypll/rtl/mypll.v(140): net \pll_inst/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net \pll_inst/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \pll_inst/lscc_pll_inst/sdi_i. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[7]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[6]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[5]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[4]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[3]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[2]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[1]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_x[0]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[7]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[6]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[5]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[4]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[3]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[2]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[1]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/u_addr_y[0]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[9]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[8]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[7]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[6]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[5]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[4]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[3]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_xpos[2]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[9]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[8]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[7]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[6]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[5]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[4]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[3]. Patching with GND.
+######## Missing driver on net \pattern_inst/myscore/mapped_ypos[2]. Patching with GND.
+
+
+
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \pattern_inst/rom_top_out[5:0] stuck at '0': 5, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \pattern_inst/rom_down_out[5:0] stuck at '0': 5, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \pattern_inst/rom_right_out[5:0] stuck at '0': 5, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \pattern_inst/rom_left_out[5:0] stuck at '0': 5, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \pattern_inst/score_data[5:0] stuck at '0': 5, 3, 2, 1
+CRITICAL <35001748> - synthesis: Bit(s) of register driving \pattern_inst/score_data[5:0] stuck at '1': 4, 0
+WARNING <35001045> - synthesis: No available RAMs found.
+CRITICAL <35001748> - synthesis: Bit(s) of register driving \arrows_inst/my_arrows_spawned[3:0] stuck at '1': 3, 2, 1, 0
+WARNING <35935040> - synthesis: Register \arrows_inst/my_left_arr_ypos_i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/my_top_arr_ypos_i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/my_right_arr_ypos_i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/my_down_arr_ypos_i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/down_arr_ypos__i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/right_arr_ypos__i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/top_arr_ypos__i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/left_arr_ypos__i0 clock is stuck at Zero. VDB-5040
+Duplicate register/latch removal. \pattern_inst/myarrow1/data_i2 is a one-to-one match with \pattern_inst/myarrow1/data_i3.
+Duplicate register/latch removal. \pattern_inst/myarrow2/data_i2 is a one-to-one match with \pattern_inst/myarrow2/data_i3.
+Duplicate register/latch removal. \pattern_inst/myarrow3/data_i2 is a one-to-one match with \pattern_inst/myarrow3/data_i3.
+Duplicate register/latch removal. \pattern_inst/myarrow4/data_i2 is a one-to-one match with \pattern_inst/myarrow4/data_i3.
+Duplicate register/latch removal. \arrows_inst/arrows_spawned_i0 is a one-to-one match with \arrows_inst/arrows_spawned_i1.
+Duplicate register/latch removal. \pattern_inst/myarrow1/data_i0 is a one-to-one match with \pattern_inst/myarrow1/data_i5.
+Duplicate register/latch removal. \pattern_inst/myarrow2/data_i0 is a one-to-one match with \pattern_inst/myarrow2/data_i5.
+Duplicate register/latch removal. \pattern_inst/myarrow3/data_i0 is a one-to-one match with \pattern_inst/myarrow3/data_i5.
+Duplicate register/latch removal. \pattern_inst/myarrow4/data_i0 is a one-to-one match with \pattern_inst/myarrow4/data_i5.
+Duplicate register/latch removal. \arrows_inst/arrows_spawned_i2 is a one-to-one match with \arrows_inst/arrows_spawned_i3.
+Duplicate register/latch removal. \pattern_inst/myarrow1/data_i1 is a one-to-one match with \pattern_inst/myarrow1/data_i4.
+Duplicate register/latch removal. \pattern_inst/myarrow2/data_i1 is a one-to-one match with \pattern_inst/myarrow2/data_i4.
+Duplicate register/latch removal. \pattern_inst/myarrow3/data_i1 is a one-to-one match with \pattern_inst/myarrow3/data_i4.
+Duplicate register/latch removal. \pattern_inst/myarrow4/data_i1 is a one-to-one match with \pattern_inst/myarrow4/data_i4.
+Duplicate register/latch removal. \arrows_inst/arrows_spawned_i0 is a one-to-one match with \arrows_inst/arrows_spawned_i2.
+Duplicate register/latch removal. \pattern_inst/myarrow1/data_i0 is a one-to-one match with \pattern_inst/myarrow1/data_i1.
+Duplicate register/latch removal. \pattern_inst/myarrow2/data_i0 is a one-to-one match with \pattern_inst/myarrow2/data_i1.
+Duplicate register/latch removal. \pattern_inst/myarrow3/data_i0 is a one-to-one match with \pattern_inst/myarrow3/data_i1.
+Duplicate register/latch removal. \pattern_inst/myarrow4/data_i0 is a one-to-one match with \pattern_inst/myarrow4/data_i1.
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+################### Begin Area Report (top)######################
+Number of register bits => 197 of 5280 (3 % )
+CCU2 => 142
+FD1P3XZ => 197
+IB => 3
+IOL_B => 4
+LUT4 => 3162
+OB => 11
+PLL_B => 1
+################### End Area Report ##################
+Number of odd-length carry chains : 6
+Number of even-length carry chains : 19
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : pll_inst/lscc_pll_inst/outglobal_o, loads : 0
+  Net : ref_clk_i_c, loads : 1
+  Net : NESControllers/nesClk_c, loads : 1
+  Net : pll_inst/lscc_pll_inst/pll_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : vga_inst/pixel_y[3], loads : 427
+  Net : vga_inst/pixel_y[5], loads : 413
+  Net : vga_inst/pixel_y[4], loads : 410
+  Net : vga_inst/pixel_y[2], loads : 360
+  Net : vga_inst/pixel_y[6], loads : 297
+  Net : vga_inst/pixel_y[7], loads : 248
+  Net : vga_inst/pixel_y[8], loads : 172
+  Net : pattern_inst/myend/n22_adj_491, loads : 164
+  Net : pattern_inst/myend/n22_adj_481, loads : 154
+  Net : pattern_inst/myend/n22_adj_477, loads : 145
+################### End Clock Report ##################
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 0
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+################### Begin DRC Report ######################
+Total number of design rule violations: 0
+###################  End DRC Report  ######################
+
+Peak Memory Usage: 1327 MB
+
+--------------------------------------------------------------
+Total CPU Time: 50 secs 
+Total REAL Time: 50 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: 368f880d63411536c380759e8b945a2c32dc490
