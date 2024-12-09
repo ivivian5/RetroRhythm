@@ -389,9 +389,11 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= "010001";
                     end case;
+                else data <= "010001"
                 end if;
+            else data <= "010001";
             end if;
         end if; 
     end process; 
