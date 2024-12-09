@@ -90,3 +90,6 @@ begin
     right_arr_ypos <= my_right_arr_ypos;
     down_arr_ypos <= my_down_arr_ypos;
 end;
+
+
+			                    --my_arrows_spawned(to_integer(((((seed xor (seed srl 1)) xor ((seed xor (seed srl 1)) sll 1)) xor ((seed xor (seed srl 1)) sll 2)) mod 4))) <= '1';
