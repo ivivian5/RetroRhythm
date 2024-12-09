@@ -206,7 +206,7 @@ begin
 
 	arrows_inst : arrows
         port map(
-            arrows_clk => outglobal_o,
+            arrows_clk => game_clock,
 			arrows_spawned => arrows_spawned,
 			left_arr_ypos => left_arr_ypos,
 			top_arr_ypos => top_arr_ypos,
