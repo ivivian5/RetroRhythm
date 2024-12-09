@@ -45,11 +45,23 @@ begin
 								or (arrows_spawned(0) = '1' and p1_keyhit(0) = '1' and 
 								to_integer(unsigned(down_arr_ypos)) > top_hitbox and to_integer(unsigned(down_arr_ypos)) < bot_hitbox) then
 			
-            score1_1 <= score1_1 + 1 when (score1_2 = 10 and not (score1_1 = 10));
-            score1_2 <= score1_2 + 1 when (score1_3 = 10 and not (score1_2 = 10));
-            score1_3 <= score1_3 + 1 when (score1_4 = 10 and not (score1_3 = 10));
-            score1_4 <= score1_4 + 1 when (score1_5 = 10 and not (score1_4 = 10));
-            score1_5 <= score1_5 + 1 when not(score1_5 = 10) else "0000";
+                if (score1_2 = 10 and not (score1_1 = 10)) then
+                    score1_1 <= score1_1 + 1;
+                end if;
+                if (score1_3 = 10 and not (score1_2 = 10)) then
+                    score1_2 <= score1_2 + 1
+                end if;
+                if (score1_4 = 10 and not (score1_3 = 10)) then
+                    score1_3 <= score1_3 + 1
+                end if;
+                if (score1_5 = 10 and not (score1_4 = 10)) then
+                    score1_4 <= score1_4 + 1
+                end if;
+                if not(score1_5 = 10) then
+                    score1_5 <= score1_5 + 1;
+                else 
+                    score1_5 <= "0000";
+                end if;
             end if;
 		    if (arrows_spawned(3) = '1' and p2_keyhit(3) = '1' and 
 								to_integer(unsigned(left_arr_ypos)) > top_hitbox and to_integer(unsigned(left_arr_ypos)) < bot_hitbox)
@@ -59,11 +71,23 @@ begin
 								to_integer(unsigned(right_arr_ypos)) > top_hitbox and to_integer(unsigned(right_arr_ypos)) < bot_hitbox)
 						or (arrows_spawned(0) = '1' and p2_keyhit(0) = '1' and 
 								to_integer(unsigned(down_arr_ypos)) > top_hitbox and to_integer(unsigned(down_arr_ypos)) < bot_hitbox) then
-			score2_1 <= score2_1 + 1 when (score2_2 = 10 and not (score2_1 = 10));
-            score2_2 <= score2_2 + 1 when (score2_3 = 10 and not (score2_2 = 10));
-            score2_3 <= score2_3 + 1 when (score2_4 = 10 and not (score2_3 = 10));
-            score2_4 <= score2_4 + 1 when (score2_5 = 10 and not (score2_4 = 10));
-            score2_5 <= score2_5 + 1 when not(score2_5 = 10) else "0000";
+			    if (score2_2 = 10 and not (score2_1 = 10)) then
+                    score2_1 <= score2_1 + 1;
+                end if;
+                if (score2_3 = 10 and not (score2_2 = 10)) then
+                    score2_2 <= score2_2 + 1
+                end if;
+                if (score2_4 = 10 and not (score2_3 = 10)) then
+                    score2_3 <= score2_3 + 1
+                end if;
+                if (score2_5 = 10 and not (score2_4 = 10)) then
+                    score2_4 <= score2_4 + 1
+                end if;
+                if not(score2_5 = 10) then
+                    score2_5 <= score2_5 + 1;
+                else 
+                    score2_5 <= "0000";
+                end if;
 		    end if;
 
 			p1_score(19 downto 16) <= score1_1;
