@@ -143,74 +143,74 @@ begin
 
     player_disp_inst: player_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => player_disp_out);
 
     score_disp_inst: score_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => score_disp_out);
 
     num0_disp_inst: num0_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num0_disp_out);
 
     num1_disp_inst: num1_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num1_disp_out);
 
     num2_disp_inst: num2_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num2_disp_out);
 
     num3_disp_inst: num3_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num3_disp_out);
 
     num4_disp_inst: num4_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num4_disp_out);
 
     num5_disp_inst: num5_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num5_disp_out);
 
     num6_disp_inst: num6_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num6_disp_out);
 
     num7_disp_inst: num7_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num7_disp_out);
 
     num8_disp_inst: num8_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num8_disp_out);
 
     num9_disp_inst: num9_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_xpos(9 downto 2), 
-		addr_y => mapped_ypos(9 downto 2), 
+		addr_x => mapped_ypos(9 downto 2), 
+		addr_y => mapped_xpos(9 downto 2), 
 		data => num9_disp_out);
 
 	process(outglobal_o) begin
@@ -228,7 +228,7 @@ begin
                     data <= num1_disp_out;
                 elsif (u_addr_x > p1_score_xpos and u_addr_x < p1_score_xpos + 120) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_score_xpos);
-                    data <= num1_disp_out;
+                    data <= num2_disp_out;
                 
                 elsif (u_addr_x > p1_dig1_xpos and u_addr_x < p1_dig1_xpos + 16) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig1_xpos);
@@ -396,7 +396,7 @@ begin
 				
                 end if;
 				else
-					data <= "010001";
+					data <= "010100";
             end if;
         end if; 
     end process; 
