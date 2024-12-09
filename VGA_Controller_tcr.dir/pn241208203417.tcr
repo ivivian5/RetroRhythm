@@ -1,0 +1,14 @@
+#Start recording tcl command: 12/8/2024 13:34:35
+#Project Location: C:/Users/jonekath/my_designs/VGA_Controller; Project name: VGA_Controller
+prj_open "C:/Users/jonekath/my_designs/VGA_Controller/VGA_Controller.rdf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/8/2024 20:34:17

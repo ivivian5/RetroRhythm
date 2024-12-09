@@ -1,0 +1,37 @@
+#Start recording tcl command: 12/8/2024 20:50:23
+#Project Location: C:/Users/jonekath/my_designs/VGA_Controller; Project name: VGA_Controller
+prj_open "C:/Users/jonekath/my_designs/VGA_Controller/VGA_Controller.rdf"
+prj_add_source "C:/Users/jonekath/Desktop/dig0_rom.vhd" "C:/Users/jonekath/Desktop/dig1_rom.vhd" "C:/Users/jonekath/Desktop/dig2_rom.vhd" "C:/Users/jonekath/Desktop/dig3_rom.vhd" "C:/Users/jonekath/Desktop/dig4_rom.vhd" "C:/Users/jonekath/Desktop/dig5_rom.vhd" "C:/Users/jonekath/Desktop/dig6_rom.vhd" "C:/Users/jonekath/Desktop/dig7_rom.vhd" "C:/Users/jonekath/Desktop/dig8_rom.vhd" "C:/Users/jonekath/Desktop/dig9_rom.vhd"
+prj_add_source "C:/Users/jonekath/Desktop/score_rom.vhd" "C:/Users/jonekath/Desktop/scoreword_rom.vhd"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jonekath/Desktop/playerp_rom.vhd"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_save 
+prj_save 
+#Stop recording: 12/9/2024 12:53:45
