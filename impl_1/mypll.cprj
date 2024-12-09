@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.vhd"
+-ver "C:/Users/jonekath/my_designs/VGA_Controller/mypll/rtl/mypll.v"
+-path "C:/Users/jonekath/my_designs/VGA_Controller/mypll" "C:/Users/jonekath/my_designs/VGA_Controller"
+-vh2008
+-top mypll
+-a "iCE40UP"
+-t "iCE40UP5K"
