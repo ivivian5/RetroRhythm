@@ -1,54 +1,104 @@
 
-"C:/lscc/radiant/2023.1/tcltk/windows/bin/tclsh" "VGA_Controller_impl_1_synthesize.tcl"
+tmcheck -par "VGA_Controller_impl_1.par" 
 
-cpe -f VGA_Controller_impl_1.cprj mypll.cprj -a iCE40UP -o VGA_Controller_impl_1_cpe.ldc
-WARNING <35831026> - No user LDC/SDC file specified in the project.
-WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port I is not connected on this instance. VDB-5050
-Top module name (Verilog): mypll
-INFO <35901018> - Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/mypll/rtl/mypll.v(11): compiling module mypll. VERI-1018
-INFO <35901018> - Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/mypll/rtl/mypll.v(105): compiling module mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;). VERI-1018
-INFO <35901018> - C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): compiling module PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;). VERI-1018
-WARNING <35935049> - input port sclk_i remains unconnected for this instance. VDB-5049
-WARNING <35935049> - input port sdi_i remains unconnected for this instance. VDB-5049
-Last elaborated design is mypll()
-Source compile complete.
-INFO <35831038> - Setting top as top module.
-WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port I is not connected on this instance. VDB-5050
-Analyzing Verilog file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v. VERI-1482
-Analyzing Verilog file mypll.v. VERI-1482
-Top module language type = VHDL.
-INFO <35901018> - mypll.v(63): compiling module mypll. VERI-1018
-WARNING <35935049> - input port hit[3] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - input port hit[2] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - input port hit[1] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - input port hit[0] remains unconnected for this instance. VDB-5049
-Top module name (VHDL, mixed language): top
-Source compile complete.
-SDC Initialization for top finished.
-SDC Distribution for top finished.
-Starting IP constraint check for mypll.
-Writing output files.
-CPE Completed. VGA_Controller_impl_1_cpe.ldc and CPEReport.txt produced.
+bitgen -w "VGA_Controller_impl_1.udb" -f "VGA_Controller_impl_1.t2b" 
+Loading VGA_Controller_impl_1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
 
 
-synthesis -f VGA_Controller_impl_1_lattice.synproj
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 2023.1.0.43.3
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "Z:\ES4\final_proj_git\RetroRhythm\VGA_Controller\impl_1\VGA_Controller_impl_1.bin".
+Bitstream generation complete!
+
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 142 MB
+
+
+ibisgen "VGA_Controller_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
+IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
+
+Tue Dec 10 01:26:03 2024
+
+Loading VGA_Controller_impl_1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+Created design models.
+
+
+Generating: Z:\ES4\final_proj_git\RetroRhythm\VGA_Controller\impl_1\IBIS\VGA_Controller_impl_1.ibs
+
+
+INFO <1191031> - Design IBIS models are generated for board level analysis.
+
+
+backanno "VGA_Controller_impl_1.udb"  -o "VGA_Controller_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
+backanno: version Radiant Software (64-bit) 2023.1.0.43.3
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Loading udb::Database ...
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Writing a verilog netlist based on the VGA_Controller_impl_1 design file.
+
+Writing Verilog netlist to file VGA_Controller_impl_1_vo.vo
+Writing SDF timing to file VGA_Controller_impl_1_vo.sdf
+Backanno finished with 0 posted error messages.
+Total CPU Time: 6 secs 
+Total REAL Time: 8 secs 
+Peak Memory Usage: 172 MB

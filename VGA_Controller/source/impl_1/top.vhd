@@ -12,7 +12,8 @@ entity top is
         data1     : in std_logic;
         data2     : in std_logic;
         nesClk    : out std_logic;
-        latch     : out std_logic		
+        latch     : out std_logic;
+		sound 	  : out std_logic
     );
 end top;
 
@@ -66,7 +67,8 @@ architecture synth of top is
 			controller1      : in std_logic_vector(3 downto 0);
 			controller2    	: in std_logic_vector(3 downto 0);
             outglobal_o: in std_logic;
-            flag: out std_logic_vector(1 downto 0)
+            flag: out std_logic_vector(1 downto 0);
+			music_on: out std_logic
         );
     end component;
 	
@@ -85,9 +87,18 @@ architecture synth of top is
         );
     end component;
 	
+	component music is
+	port(
+		clk_in : in std_logic;
+		sound: out std_logic;
+		start: in std_logic
+		);
+	end component;
+	
 	component arrows is
         port(
 			arrows_clk : in std_logic;
+			--hit : in std_logic_vector(3 downto 0);
 			arrows_spawned : out std_logic_vector(3 downto 0);
 			left_arr_ypos : out std_logic_vector(9 downto 0);
 			top_arr_ypos : out std_logic_vector(9 downto 0);
@@ -114,17 +125,6 @@ architecture synth of top is
 	);
 	end component;
 
-	component clk_divider is
-	port(
-		clk_in : in std_logic;
-		div_num : in integer;
-		reset : in std_logic;
-		clk_out : out std_logic
-	);
-	end component;
-
-
-    signal game_clock: std_logic;
     signal outglobal_o: std_logic;  
     signal valid: std_logic;  
     signal pixel_x: std_logic_vector(9 downto 0); 
@@ -146,11 +146,10 @@ architecture synth of top is
     signal start : std_logic := '0';
 	signal restart : std_logic := '0';
 	signal endgame : std_logic := '0';
+	signal music_on : std_logic := '0';
 	
 	signal p1_score: unsigned(19 downto 0); 
 	signal p2_score: unsigned(19 downto 0); 
-
-signal score_clk : std_logic;
 
 begin
     pll_inst : mypll
@@ -210,12 +209,21 @@ begin
             controller1 => controller1,           
             controller2 => controller2,  
             outglobal_o => outglobal_o,      
-            flag => flag                    
+            flag => flag,
+			music_on => music_on
+        );
+		
+	music_inst : music
+        port map(
+			clk_in => outglobal_o,
+			sound => sound,
+			start => music_on
         );
 
 	arrows_inst : arrows
         port map(
             arrows_clk => outglobal_o,
+			--hit => controller1 nand controller2,
 			arrows_spawned => arrows_spawned,
 			left_arr_ypos => left_arr_ypos,
 			top_arr_ypos => top_arr_ypos,
@@ -225,7 +233,7 @@ begin
 		
 	scoring_inst : scoring
 		port map(
-			score_clk => score_clk,
+			score_clk => outglobal_o,
 			p1_keyhit => controller1,
 			p2_keyhit => controller2,
 			arrows_spawned => arrows_spawned,
@@ -236,16 +244,6 @@ begin
 			p1_score => p1_score,
 			p2_score => p2_score
 		);
-
-	score_clk_inst : clk_divder
-		port map(
-			clk_in => outglobal_o,
-			div_num => 6317500,
-			reset => '0',
-			clk_out => score_clk
-		);
-			
-			
 
     pll <= outcore_o;
 

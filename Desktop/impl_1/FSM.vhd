@@ -10,8 +10,7 @@ entity FSM is
         controller1     : in std_logic_vector(3 downto 0);
         controller2     : in std_logic_vector(3 downto 0);
         outglobal_o     : in std_logic;
-        flag            : out std_logic_vector(1 downto 0);
-		music_on		: out std_logic
+        flag            : out std_logic_vector(1 downto 0)
     );
 end FSM;
 
@@ -25,7 +24,6 @@ begin
         if rising_edge(outglobal_o) then
             case s is
                 when START_SCREEN =>
-					music_on <= '0';
                     flag <= "00";
                     if start = '1' then  
                         s <= PLAY_GAME;
@@ -33,7 +31,6 @@ begin
                         s <= START_SCREEN;
                     end if;
                 when PLAY_GAME =>
-					music_on <= '1';
                     flag <= "01";
                     if restart = '1' then  
                         s <= START_SCREEN;
@@ -43,7 +40,6 @@ begin
                         s <= PLAY_GAME;
                     end if;
                 when END_SCREEN =>
-					music_on <= '0';
                     flag <= "10";
                     if restart = '1' then
                         s <= START_SCREEN;

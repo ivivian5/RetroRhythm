@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.0.43.3
 
-Tue Dec 10 00:44:55 2024
+Tue Dec 10 01:25:45 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -77,30 +77,22 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-pattern_inst/myscore/mapped_xpos_7__I_0/D                           
+vga_inst/columns_9__I_1/D               |    No arrival or required
+vga_inst/columns_9__I_1/SR              |    No arrival or required
+vga_inst/columns_9__I_2/D               |    No arrival or required
+vga_inst/columns_9__I_3/D               |    No arrival or required
+{vga_inst/columns_9__I_3/SR   vga_inst/columns_9__I_2/SR}                           
                                         |    No arrival or required
-pattern_inst/myscore/mapped_xpos_7__I_0/SP                           
+vga_inst/columns_9__I_4/D               |    No arrival or required
+vga_inst/columns_9__I_5/D               |    No arrival or required
+{vga_inst/columns_9__I_5/SR   vga_inst/columns_9__I_4/SR}                           
                                         |    No arrival or required
-pattern_inst/myscore/mapped_xpos_7__I_133/D                           
-                                        |    No arrival or required
-pattern_inst/myscore/mapped_xpos_7__I_134/D                           
-                                        |    No arrival or required
-{pattern_inst/myscore/mapped_xpos_7__I_134/SP   pattern_inst/myscore/mapped_xpos_7__I_133/SP}                           
-                                        |    No arrival or required
-pattern_inst/myscore/mapped_xpos_7__I_135/D                           
-                                        |    No arrival or required
-pattern_inst/myscore/mapped_xpos_7__I_136/D                           
-                                        |    No arrival or required
-{pattern_inst/myscore/mapped_xpos_7__I_136/SP   pattern_inst/myscore/mapped_xpos_7__I_135/SP}                           
-                                        |    No arrival or required
-pattern_inst/myscore/mapped_xpos_7__I_137/D                           
-                                        |    No arrival or required
-pattern_inst/myscore/mapped_xpos_7__I_137/SP                           
-                                        |    No arrival or required
+vga_inst/columns_9__I_6/D               |    No arrival or required
+vga_inst/columns_9__I_7/D               |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       423
+ts                                      |                       441
                                         |                          
 -------------------------------------------------------------------
 

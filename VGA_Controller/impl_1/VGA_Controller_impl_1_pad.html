@@ -48,7 +48,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Tue Dec 10 00:44:37 2024
+Tue Dec 10 01:25:25 2024
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+------------------------------------------+
@@ -68,6 +68,7 @@ Pinout by Port Name:
 | rgb[3]    | 35/0     | LVCMOS33_OUT | PR13B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | rgb[4]    | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | rgb[5]    | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sound     | 44/2     | LVCMOS33_OUT | PL7B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 +-----------+----------+--------------+-------+------------------------------------------+
 
 Vccio by Bank:
@@ -117,7 +118,7 @@ Vccio by Bank:
 | 41/0     |                     |            |              | PR7A  | RGB2             |
 | 42/0     |     unused, PULL:UP |            |              | PR9A  |                  |
 | 43/0     |     unused, PULL:UP |            |              | PR10A |                  |
-| 44/2     |     unused, PULL:UP |            |              | PL7B  | PCLKT2_0         |
+| 44/2     | sound               |            | LVCMOS33_OUT | PL7B  | PCLKT2_0         |
 | 45/2     |     unused, PULL:UP |            |              | PL8B  |                  |
 | 46/2     |     unused, PULL:UP |            |              | PL6A  |                  |
 | 47/2     |     unused, PULL:UP |            |              | PL7A  |                  |
@@ -158,6 +159,7 @@ ldc_set_location -site {32} [ get_ports {rgb[2]} ]
 ldc_set_location -site {35} [ get_ports {rgb[3]} ]
 ldc_set_location -site {31} [ get_ports {rgb[4]} ]
 ldc_set_location -site {37} [ get_ports {rgb[5]} ]
+ldc_set_location -site {44} [ get_ports {sound} ]
 
 
 
@@ -165,7 +167,7 @@ ldc_set_location -site {37} [ get_ports {rgb[5]} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Tue Dec 10 00:44:37 2024
+Tue Dec 10 01:25:26 2024
 
 
 
