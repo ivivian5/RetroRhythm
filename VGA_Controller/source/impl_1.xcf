@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
-<ispXCF version="R2024.1">
+<ispXCF version="R2023.1">
 	<Comment></Comment>
 	<Chain>
 		<Comm>SPI</Comm>
@@ -18,8 +18,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/VGA_Controller_impl_1.bin</File>
-			<FileTime>12/02/24 21:48:19</FileTime>
-			<JedecChecksum>0x1573</JedecChecksum>
+			<FileTime>12/09/24 23:47:11</FileTime>
+			<JedecChecksum>0xD05F</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>
 			<Option>
@@ -60,7 +60,7 @@
 					<Family>SPI Serial Flash (Legacy)</Family>
 					<Name>N25Q032</Name>
 					<IDCode>0x16</IDCode>
-					<Package>16-pin SOIC</Package>
+					<Package>8-pin VDFPN8</Package>
 					<Operation>Erase,Program,Verify</Operation>
 					<File>../../impl_1/VGA_Controller_impl_1.bin</File>
 					<AddressBase>0x00000000</AddressBase>
@@ -75,11 +75,11 @@
 				<Device>
 					<Pos>1</Pos>
 					<Name></Name>
-					<File>C:/Users/jonekath/my_designs/VGA_Controller/impl_1/VGA_Controller_impl_1.bin</File>
+					<File>Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/impl_1/VGA_Controller_impl_1.bin</File>
 					<LocalChainList>
 						<LocalDevice index="-99"
 							name="Unknown"
-							file="C:/Users/jonekath/my_designs/VGA_Controller/impl_1/VGA_Controller_impl_1.bin"/>
+							file="Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/impl_1/VGA_Controller_impl_1.bin"/>
 					</LocalChainList>
 					<Option>
 						<SVFVendor>JTAG STANDARD</SVFVendor>

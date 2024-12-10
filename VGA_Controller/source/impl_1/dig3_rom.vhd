@@ -5,54 +5,38 @@ library IEEE;
 entity num3_disp is 
  	port(
 		outglobal_o : in std_logic;
-		addr_x : in std_logic_vector(7 downto 0);
-		addr_y : in std_logic_vector(7 downto 0);
+		addr_x : in std_logic_vector(2 downto 0);
+		addr_y : in std_logic_vector(1 downto 0);
 		data : out std_logic_vector(5 downto 0) -- 6-bit words, RRGGBB
 	);
 end;
 
 architecture sim of num3_disp is
-signal addr : std_logic_vector(15 downto 0);
+signal addr : std_logic_vector(4 downto 0);
 
 begin
-	addr (15 downto 8) <= addr_x;
-	addr (7 downto 0) <= addr_y;
+	addr (4 downto 2) <= addr_x;
+	addr (1 downto 0) <= addr_y;
 	process(outglobal_o) begin
 		if rising_edge(outglobal_o) then
 			case addr is
-				when "0000000000000000" => data <= "111111";
-				when "0000000000000001" => data <= "111111";
-				when "0000000000000010" => data <= "111111";
-				when "0000000000000011" => data <= "111111";
-				when "0000000100000000" => data <= "000001";
-				when "0000000100000001" => data <= "000001";
-				when "0000000100000010" => data <= "000001";
-				when "0000000100000011" => data <= "111111";
-				when "0000001000000000" => data <= "000001";
-				when "0000001000000001" => data <= "000001";
-				when "0000001000000010" => data <= "000001";
-				when "0000001000000011" => data <= "111111";
-				when "0000001100000000" => data <= "000001";
-				when "0000001100000001" => data <= "111111";
-				when "0000001100000010" => data <= "111111";
-				when "0000001100000011" => data <= "111111";
-				when "0000010000000000" => data <= "000001";
-				when "0000010000000001" => data <= "000001";
-				when "0000010000000010" => data <= "000001";
-				when "0000010000000011" => data <= "111111";
-				when "0000010100000000" => data <= "000001";
-				when "0000010100000001" => data <= "000001";
-				when "0000010100000010" => data <= "000001";
-				when "0000010100000011" => data <= "111111";
-				when "0000011000000000" => data <= "000001";
-				when "0000011000000001" => data <= "000001";
-				when "0000011000000010" => data <= "000001";
-				when "0000011000000011" => data <= "111111";
-				when "0000011100000000" => data <= "111111";
-				when "0000011100000001" => data <= "111111";
-				when "0000011100000010" => data <= "111111";
-				when "0000011100000011" => data <= "111111";
-				when others => data <= "010001";
+				when "00000" => data <= "111111";
+				when "00001" => data <= "111111";
+				when "00010" => data <= "111111";
+				when "00011" => data <= "111111";
+				when "00111" => data <= "111111";
+				when "01011" => data <= "111111";
+				when "01101" => data <= "111111";
+				when "01110" => data <= "111111";
+				when "01111" => data <= "111111";
+				when "10011" => data <= "111111";
+				when "10111" => data <= "111111";
+				when "11011" => data <= "111111";
+				when "11100" => data <= "111111";
+				when "11101" => data <= "111111";
+				when "11110" => data <= "111111";
+				when "11111" => data <= "111111";
+				when others => data <= "000001";
 			end case;
 		end if; 
 	end process; 

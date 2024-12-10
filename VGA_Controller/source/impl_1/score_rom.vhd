@@ -57,85 +57,85 @@ architecture sim of score_rom is
 
     component player_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component score_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(5 downto 0);
+    		addr_y : in std_logic_vector(2 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num0_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num1_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num2_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num3_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num4_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num5_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num6_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num7_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num8_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
     component num9_disp is port(
     		outglobal_o : in std_logic;
-    		addr_x : in std_logic_vector(7 downto 0);
-    		addr_y : in std_logic_vector(7 downto 0);
+    		addr_x : in std_logic_vector(2 downto 0);
+    		addr_y : in std_logic_vector(1 downto 0);
     		data : out std_logic_vector(5 downto 0));
     end component;
 
@@ -143,74 +143,74 @@ begin
 
     player_disp_inst: player_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => player_disp_out);
 
     score_disp_inst: score_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_xpos(7 downto 2), 
+		addr_y => mapped_ypos(4 downto 2), 
 		data => score_disp_out);
 
     num0_disp_inst: num0_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num0_disp_out);
 
     num1_disp_inst: num1_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num1_disp_out);
 
     num2_disp_inst: num2_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num2_disp_out);
 
     num3_disp_inst: num3_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num3_disp_out);
 
     num4_disp_inst: num4_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num4_disp_out);
 
     num5_disp_inst: num5_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num5_disp_out);
 
     num6_disp_inst: num6_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num6_disp_out);
 
     num7_disp_inst: num7_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num7_disp_out);
 
     num8_disp_inst: num8_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num8_disp_out);
 
     num9_disp_inst: num9_disp port map(
 		outglobal_o => outglobal_o, 
-		addr_x => mapped_ypos(9 downto 2), 
-		addr_y => mapped_xpos(9 downto 2), 
+		addr_x => mapped_ypos(4 downto 2), 
+		addr_y => mapped_xpos(3 downto 2), 
 		data => num9_disp_out);
 
 	process(outglobal_o) begin
@@ -219,18 +219,18 @@ begin
             u_addr_y <= unsigned(addr_y);
             mapped_ypos <= std_logic_vector(u_addr_y - 4);
 
-			if (u_addr_y > top_scoreline and u_addr_y < bot_scoreline) then
-                if (u_addr_x > p1_player_xpos and u_addr_x < p1_player_xpos + 16) then
+			if (u_addr_y > top_scoreline + 1 and u_addr_y < bot_scoreline - 1) then
+                if (u_addr_x > p1_player_xpos - 1 and u_addr_x < p1_player_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_player_xpos);
                     data <= player_disp_out;
-                elsif (u_addr_x > p1_num_xpos and u_addr_x < p1_num_xpos + 16) then
+                elsif (u_addr_x > p1_num_xpos - 1 and u_addr_x < p1_num_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_num_xpos);
                     data <= num1_disp_out;
-                elsif (u_addr_x > p1_score_xpos and u_addr_x < p1_score_xpos + 120) then
+                elsif (u_addr_x > p1_score_xpos - 1 and u_addr_x < p1_score_xpos + 121) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_score_xpos);
-                    data <= num2_disp_out;
+                    data <= score_disp_out;
                 
-                elsif (u_addr_x > p1_dig1_xpos and u_addr_x < p1_dig1_xpos + 16) then
+                elsif (u_addr_x > p1_dig1_xpos - 1 and u_addr_x < p1_dig1_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig1_xpos);
                     case p1_score_digs(19 downto 16) is
                         when "0000" => data <= num0_disp_out;
@@ -245,7 +245,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p1_dig2_xpos and u_addr_x < p1_dig2_xpos + 16) then
+                elsif (u_addr_x > p1_dig2_xpos - 1 and u_addr_x < p1_dig2_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig2_xpos);
                     case p1_score_digs(15 downto 12) is
                         when "0000" => data <= num0_disp_out;
@@ -260,7 +260,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p1_dig3_xpos and u_addr_x < p1_dig3_xpos + 16) then
+                elsif (u_addr_x > p1_dig3_xpos - 1 and u_addr_x < p1_dig3_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig3_xpos);
                     case p1_score_digs(11 downto 8) is
                         when "0000" => data <= num0_disp_out;
@@ -275,7 +275,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p1_dig4_xpos and u_addr_x < p1_dig4_xpos + 16) then
+                elsif (u_addr_x > p1_dig4_xpos - 1 and u_addr_x < p1_dig4_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig4_xpos);
                     case p1_score_digs(7 downto 4) is
                         when "0000" => data <= num0_disp_out;
@@ -290,7 +290,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p1_dig5_xpos and u_addr_x < p1_dig5_xpos + 16) then
+                elsif (u_addr_x > p1_dig5_xpos - 1 and u_addr_x < p1_dig5_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig5_xpos);
                     case p1_score_digs(3 downto 0) is
                         when "0000" => data <= num0_disp_out;
@@ -306,17 +306,17 @@ begin
                         when others => data <= "000000";
                     end case;
                 -- -- player 2
-                elsif (u_addr_x > p2_player_xpos and u_addr_x < p2_player_xpos + 16) then
+                elsif (u_addr_x > p2_player_xpos and u_addr_x < p2_player_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_player_xpos);
                     data <= player_disp_out;
-                elsif (u_addr_x > p2_num_xpos and u_addr_x < p2_num_xpos + 16) then
+                elsif (u_addr_x > p2_num_xpos and u_addr_x < p2_num_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_num_xpos);
-                    data <= num1_disp_out;
-                elsif (u_addr_x > p2_score_xpos and u_addr_x < p2_score_xpos + 16) then
+                    data <= num2_disp_out;
+                elsif (u_addr_x > p2_score_xpos and u_addr_x < p2_score_xpos + 121) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_score_xpos);
-                    data <= num1_disp_out;
+                    data <= score_disp_out;
                 
-                elsif (u_addr_x > p2_dig1_xpos and u_addr_x < p2_dig1_xpos + 16) then
+                elsif (u_addr_x > p2_dig1_xpos - 1 and u_addr_x < p2_dig1_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig1_xpos);
                     case p2_score_digs(19 downto 16) is
                         when "0000" => data <= num0_disp_out;
@@ -331,7 +331,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p2_dig2_xpos and u_addr_x < p2_dig2_xpos + 16) then
+                elsif (u_addr_x > p2_dig2_xpos - 1 and u_addr_x < p2_dig2_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig2_xpos);
                     case p2_score_digs(15 downto 12) is
                         when "0000" => data <= num0_disp_out;
@@ -346,7 +346,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p2_dig3_xpos and u_addr_x < p2_dig3_xpos + 16) then
+                elsif (u_addr_x > p2_dig3_xpos - 1 and u_addr_x < p2_dig3_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig3_xpos);
                     case p2_score_digs(11 downto 8) is
                         when "0000" => data <= num0_disp_out;
@@ -361,7 +361,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p2_dig4_xpos and u_addr_x < p2_dig4_xpos + 16) then
+                elsif (u_addr_x > p2_dig4_xpos - 1 and u_addr_x < p2_dig4_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig4_xpos);
                     case p2_score_digs(7 downto 4) is
                         when "0000" => data <= num0_disp_out;
@@ -376,7 +376,7 @@ begin
                         when "1001" => data <= num9_disp_out;
                         when others => data <= "000000";
                     end case;
-                elsif (u_addr_x > p2_dig5_xpos and u_addr_x < p2_dig5_xpos + 16) then
+                elsif (u_addr_x > p2_dig5_xpos - 1 and u_addr_x < p2_dig5_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig5_xpos);
                     case p2_score_digs(3 downto 0) is
                         when "0000" => data <= num0_disp_out;
@@ -392,11 +392,11 @@ begin
                         when others => data <= "000000";
                     end case;
 				else
-					data <= "000100";
+					data <= "000001";
 				
                 end if;
 				else
-					data <= "010100";
+					data <= "000001";
             end if;
         end if; 
     end process; 

@@ -112,8 +112,8 @@ component arrow1 is
 component rom is
 	port(
 			outglobal_o : in std_logic;
-			addr_x : in std_logic_vector(7 downto 0);
-			addr_y : in std_logic_vector(7 downto 0);
+			addr_x : in std_logic_vector(6 downto 0);
+			addr_y : in std_logic_vector(6 downto 0);
 			data : out std_logic_vector(5 downto 0) 
        	);
        end component;
@@ -121,8 +121,8 @@ component rom is
 component endscreen is
 	port(
 			outglobal_o : in std_logic;
-			addr_x : in std_logic_vector(7 downto 0);
-			addr_y : in std_logic_vector(7 downto 0);
+			addr_x : in std_logic_vector(6 downto 0);
+			addr_y : in std_logic_vector(6 downto 0);
 			data : out std_logic_vector(5 downto 0) 
        	);
        end component;
@@ -176,14 +176,14 @@ component endscreen is
 begin
 		myrom: rom port map(
 		outglobal_o => outglobal_o, 
-		addr_x => pixel_x(9 downto 2), 
-		addr_y => pixel_y(9 downto 2), 
+		addr_x => pixel_x(9 downto 3), 
+		addr_y => pixel_y(9 downto 3), 
 		data => rom_data);
 		
 		myend: endscreen port map(
 		outglobal_o => outglobal_o, 
-		addr_x => pixel_x(9 downto 2), 
-		addr_y => pixel_y(9 downto 2), 
+		addr_x => pixel_x(9 downto 3), 
+		addr_y => pixel_y(9 downto 3), 
 		data => end_screen);
 
 		myarrow1: arrow1 port map(

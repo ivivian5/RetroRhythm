@@ -1,33 +1,31 @@
-
                          Lattice Mapping Report File
-
 Design:  top
 Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 2024.1.0.34.2
-Mapped on: Mon Dec  9 13:59:25 2024
+Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
+Mapped on: Tue Dec 10 00:44:04 2024
 
 Design Information
 ------------------
 
-Command line:   map -pdc C:/Users/jonekath/my_designs/VGA_Controller/pins.pdc -i
-     VGA_Controller_impl_1_syn.udb -o VGA_Controller_impl_1_map.udb -mp
-     VGA_Controller_impl_1.mrp -hierrpt -gui -msgset
-     C:/Users/jonekath/my_designs/VGA_Controller/promote.xml
+Command line:   map -i VGA_Controller_impl_1_syn.udb -pdc
+     Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/pins.pdc -o
+     VGA_Controller_impl_1_map.udb -mp VGA_Controller_impl_1.mrp -hierrpt -gui
+     -msgset Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/promote.xml
 
 Design Summary
 --------------
 
-   Number of slice registers: 341 out of  5280 (6%)
+   Number of slice registers: 316 out of  5280 (6%)
    Number of I/O registers:      4 out of   117 (3%)
-   Number of LUT4s:           4161 out of  5280 (79%)
-      Number of logic LUT4s:             3714
-      Number of inserted feedthru LUT4s: 129
-      Number of replicated LUT4s:         14
-      Number of ripple logic:            152 (304 LUT4s)
+   Number of LUT4s:           2614 out of  5280 (50%)
+      Number of logic LUT4s:             2183
+      Number of inserted feedthru LUT4s: 130
+      Number of replicated LUT4s:          9
+      Number of ripple logic:            146 (292 LUT4s)
    Number of IO sites used:   14 out of 39 (36%)
       Number of IO sites used for general PIO: 14
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -47,19 +45,20 @@ Design Summary
    Number of SRAMs:            0 out of 4 (0%)
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             0 out of 30 (0%)
+   Number of EBRs:             11 out of 30 (36%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  3
-      Net outglobal_o: 282 loads, 282 rising, 0 falling (Driver: Pin
+      Net outglobal_o: 272 loads, 272 rising, 0 falling (Driver: Pin
      pll_inst.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net nesClk_c: 14 loads, 14 rising, 0 falling (Driver: Pin
-     NESControllers.i1_2_lut_adj_978/Z)
       Net ref_clk_i_c: 1 loads, 1 rising, 0 falling (Driver: Port ref_clk_i)
-   Number of Clock Enables:  5
-      Net arrows_inst.n93818: 20 loads, 20 SLICEs
-      Net n25: 20 loads, 20 SLICEs
-      Net n146: 20 loads, 20 SLICEs
-      Net pattern_inst.myscore.n93819: 5 loads, 5 SLICEs
+      Net nesClk_c: 14 loads, 14 rising, 0 falling (Driver: Pin
+     NESControllers.nesClk_c_I_0/Z)
+   Number of Clock Enables:  10
+      Net latch_pad.vcc: 33 loads, 0 SLICEs
+      Net pattern_inst.myscore.mapped_xpos_2__N_696: 4 loads, 4 SLICEs
+      Net rows_0__N_87: 6 loads, 6 SLICEs
+      Net arrows_inst.my_down_arr_ypos_1__N_580: 20 loads, 20 SLICEs
+      Net score1_1_0__N_591: 4 loads, 4 SLICEs
 
                                     Page 1
 
@@ -69,64 +68,63 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net vga_inst.n59278: 6 loads, 6 SLICEs
+      Net score1_4_0__N_627: 4 loads, 4 SLICEs
+      Net score2_5_0__N_683: 20 loads, 20 SLICEs
+      Net score1_5_0__N_639: 4 loads, 4 SLICEs
+      Net score1_3_0__N_615: 4 loads, 4 SLICEs
+      Net score1_2_0__N_603: 4 loads, 4 SLICEs
    Number of LSRs:  19
-      Net arrows_inst.n37: 1 loads, 1 SLICEs
-      Net NESControllers.n94421: 11 loads, 11 SLICEs
-      Net pixel_x[9]: 4 loads, 4 SLICEs
-      Net n94415: 6 loads, 6 SLICEs
-      Net pattern_inst.n678: 1 loads, 1 SLICEs
-      Net pattern_inst.myrom.n133361: 1 loads, 1 SLICEs
-      Net pattern_inst.myend.n803: 4 loads, 4 SLICEs
-      Net pattern_inst.n574: 1 loads, 1 SLICEs
-      Net pattern_inst.n559: 1 loads, 1 SLICEs
-      Net pattern_inst.n544: 1 loads, 1 SLICEs
-      Net pattern_inst.n529: 1 loads, 1 SLICEs
-      Net pattern_inst.myend.n100889: 1 loads, 1 SLICEs
-      Net fsm_inst.s[1]_2: 2 loads, 2 SLICEs
-      Net fsm_inst.n94424: 1 loads, 1 SLICEs
-      Net vga_inst.n59298: 6 loads, 6 SLICEs
-      Net vga_inst.n15: 6 loads, 6 SLICEs
-      Net vga_inst.n4: 1 loads, 1 SLICEs
-      Net scoring_inst.n94423: 4 loads, 4 SLICEs
-      Net scoring_inst.n94422: 4 loads, 4 SLICEs
+      Net rgb_c_0_N_713: 6 loads, 6 SLICEs
+      Net pixel_x[9]: 2 loads, 2 SLICEs
+      Net pattern_inst.rom_arrow_4_0__N_110: 1 loads, 1 SLICEs
+      Net pattern_inst.rom_arrow_3_0__N_107: 1 loads, 1 SLICEs
+      Net pattern_inst.rom_arrow_2_0__N_104: 1 loads, 1 SLICEs
+      Net pattern_inst.rom_arrow_1_0__N_101: 1 loads, 1 SLICEs
+      Net fsm_inst.s[1]: 2 loads, 2 SLICEs
+      Net fsm_inst.flag_1__N_38: 1 loads, 1 SLICEs
+      Net rows_0__N_88: 6 loads, 6 SLICEs
+      Net columns_0__N_58: 6 loads, 6 SLICEs
+      Net vga_inst.valid_N_720: 1 loads, 1 SLICEs
+      Net arrows_inst.down_arr_ypos_1__N_36: 36 loads, 36 SLICEs
+      Net score1_1_0__N_592: 4 loads, 4 SLICEs
+      Net score1_2_0__N_604: 4 loads, 4 SLICEs
+      Net score1_4_0__N_628: 4 loads, 4 SLICEs
+      Net score1_5_0__N_640: 4 loads, 4 SLICEs
+      Net score1_3_0__N_616: 4 loads, 4 SLICEs
+      Net scoring_inst.score2_5_0__N_684: 4 loads, 4 SLICEs
+      Net NESControllers.NEScount_0__N_486: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net pixel_y[4]: 422 loads
-      Net pixel_y[5]: 417 loads
-      Net pixel_y[3]: 412 loads
-      Net pixel_y[2]: 379 loads
-      Net pixel_y[6]: 316 loads
-      Net pixel_y[7]: 281 loads
-      Net pattern_inst.myend.n22_adj_654: 215 loads
-      Net pixel_y[8]: 174 loads
-      Net pattern_inst.myend.n22_adj_651: 164 loads
-      Net pixel_x[2]: 154 loads
-
+      Net pixel_y[3]: 244 loads
+      Net pixel_y[4]: 209 loads
+      Net pixel_y[5]: 194 loads
+      Net pixel_x[4]: 170 loads
+      Net pixel_x[5]: 169 loads
+      Net pixel_x[3]: 154 loads
+      Net pixel_y[6]: 132 loads
+      Net pixel_y[7]: 130 loads
+      Net pixel_y[8]: 127 loads
+      Net latch_pad.vcc: 126 loads
 
 
 
 
    Number of warnings:  4
-   Number of criticals: 0
    Number of errors:    0
 
-Design Errors/Criticals/Warnings
---------------------------------
+Design Errors/Warnings
+----------------------
 
-WARNING <1026001> - map: C:/Users/jonekath/my_designs/VGA_Controller/pins.pdc
-     (12) : No port matched 'start_pressed'.
+WARNING <1026001> - map:
+     Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/pins.pdc (12) : No port
+     matched 'start_pressed'.
 WARNING <1027013> - map: No port matched 'start_pressed'.
-WARNING <1026001> - map: C:/Users/jonekath/my_designs/VGA_Controller/pins.pdc
-     (12) : Can't resolve object 'start_pressed' in constraint 'ldc_set_location
-     -site {18} [get_ports start_pressed]'.
+WARNING <1014301> - map: Can't resolve object 'start_pressed' in constraint
+     'ldc_set_location -site {18} [get_ports start_pressed]'.
 WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {18}
      [get_ports start_pressed]'.
 
-IO (PIO) Attributes
--------------------
 
-+---------------------+-----------+-----------+-------+-------+-----------+
-| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+
 
                                     Page 2
 
@@ -134,8 +132,11 @@ IO (PIO) Attributes
 
 
 
-IO (PIO) Attributes (cont)
---------------------------
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | data2               | INPUT     |           | I     |       |           |
@@ -170,7 +171,8 @@ IO (PIO) Attributes (cont)
 Removed logic
 -------------
 
-Block data2_pad.vlo_inst was optimized away.
+Block i94853_2_lut_2_lut was optimized away.
+Block i1 was optimized away.
 
 PLL/DLL Summary
 ---------------
@@ -189,10 +191,6 @@ PLL 1:                                 Pin/Node Value
   BYPASS signal:                                GND
   LATCH signal:                                 GND
   Lock Signal:                                  NONE
-  Input Clock Frequency (MHz):                  NA
-  Reference Divider:                            0
-  Feedback Divider:                             66
-  VCO Divider:                                  5
 
                                     Page 3
 
@@ -202,6 +200,10 @@ PLL 1:                                 Pin/Node Value
 
 PLL/DLL Summary (cont)
 ----------------------
+  Input Clock Frequency (MHz):                  NA
+  Reference Divider:                            0
+  Feedback Divider:                             66
+  VCO Divider:                                  5
   ENABLE_ICEGATE_PORTA:                         0
   ENABLE_ICEGATE_PORTB:                         0
   PLLOUT_SELECT_PORTA:                          GENCLK
@@ -219,48 +221,110 @@ PLL/DLL Summary (cont)
 ASIC Components
 ---------------
 
-Instance Name: NESControllers/reg2_i1
+Instance Name: pattern_inst/myscore/score_disp_inst/mapped_xpos_2__I_0_3
+         Type: EBR
+Instance Name: pattern_inst/myscore/player_disp_inst/mapped_xpos_2__I_0_2
+         Type: EBR
+Instance Name: pattern_inst/myscore/num9_disp_inst/mapped_xpos_2__I_0
+         Type: EBR
+Instance Name: pattern_inst/myscore/num8_disp_inst/mapped_xpos_2__I_0_11
+         Type: EBR
+Instance Name: pattern_inst/myscore/num6_disp_inst/mapped_xpos_2__I_0_10
+         Type: EBR
+Instance Name: pattern_inst/myscore/num5_disp_inst/mapped_xpos_2__I_0_9
+         Type: EBR
+Instance Name: pattern_inst/myscore/num4_disp_inst/mapped_xpos_2__I_0_8
+         Type: EBR
+Instance Name: pattern_inst/myscore/num3_disp_inst/mapped_xpos_2__I_0_7
+         Type: EBR
+Instance Name: pattern_inst/myscore/num2_disp_inst/mapped_xpos_2__I_0_6
+         Type: EBR
+Instance Name: pattern_inst/myscore/num1_disp_inst/mapped_xpos_2__I_0_5
+         Type: EBR
+Instance Name: pattern_inst/myscore/num0_disp_inst/mapped_xpos_2__I_0_4
+         Type: EBR
+Instance Name: vga_inst/VSYNC_c_I_0
          Type: IOLOGIC
-Instance Name: NESControllers/reg1_i1
-         Type: IOLOGIC
-Instance Name: vga_inst/HSYNC
-         Type: IOLOGIC
-Instance Name: vga_inst/VSYNC
+Instance Name: vga_inst/HSYNC_c_I_0
          Type: IOLOGIC
 Instance Name: pll_inst/lscc_pll_inst/u_PLL_B
          Type: PLL
-
-Constraint Summary
-------------------
-
-   Total number of constraints: 18
-   Total number of constraints dropped: 1
-   Dropped constraint is:
-     ldc_set_location -site {18} [get_ports start_pressed]
-
-Run Time and Memory Usage
--------------------------
-
-   Total CPU Time: 2 secs
-   Total REAL Time: 2 secs
-   Peak Memory Usage: 118 MB
-Checksum -- map: 590b3693b2458e01c005b41de6220aea641c0869
-
-
-
-
-
-
-
-
-
-
+Instance Name: NESControllers/data2_c_I_0
+         Type: IOLOGIC
+Instance Name: NESControllers/data1_c_I_0
+         Type: IOLOGIC
 
 
 
 
 
                                     Page 4
+
+
+
+
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 17
+   Total number of constraints dropped: 1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 91 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 5
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -270,5 +334,5 @@ Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2024 Lattice Semiconductor
+Copyright (c) 2002-2023 Lattice Semiconductor
      Corporation,  All rights reserved.

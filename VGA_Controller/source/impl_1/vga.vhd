@@ -9,8 +9,7 @@ entity vga is
         VSYNC       : out std_logic;
         pixel_x     : out std_logic_vector(9 downto 0);
         pixel_y     : out std_logic_vector(9 downto 0);
-        valid       : out std_logic;
-        game_clock  : out std_logic
+        valid     : out std_logic
     );
 end vga;
 
@@ -28,10 +27,8 @@ architecture synth of vga is
     constant V_SYNC_END     : integer := 492; 
     constant V_VISIBLE      : integer := 480; 
 begin
-
-    game_clock <= '1' when pixel_x = 485 and pixel_y = 650 else '0';
-
-    process(outglobal_o) begin
+    process(outglobal_o)
+    begin
         if rising_edge(outglobal_o) then
             columns <= columns + 1;
             if columns = H_TOTAL - 1 then

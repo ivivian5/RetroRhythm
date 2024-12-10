@@ -1,0 +1,6 @@
+#Start recording tcl command: 12/9/2024 21:49:15
+#Project Location: Z:/ES4/final_proj_git/RetroRhythm; Project name: VGA_Controller
+prj_open "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller.rdf"
+prj_save 
+prj_close
+#Stop recording: 12/9/2024 21:49:35
