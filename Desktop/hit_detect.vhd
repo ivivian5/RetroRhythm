@@ -22,43 +22,51 @@ entity scoring is
 end scoring;
 
 architecture synth of scoring is
-	signal score1_1 : unsigned(3 downto 0);
-    signal score1_2 : unsigned(3 downto 0);
-    signal score1_3 : unsigned(3 downto 0);
-    signal score1_4 : unsigned(3 downto 0);
-    signal score1_5 : unsigned(3 downto 0);
-	signal score2_1 : unsigned(3 downto 0);
-    signal score2_2 : unsigned(3 downto 0);
-    signal score2_3 : unsigned(3 downto 0);
-    signal score2_4 : unsigned(3 downto 0);
-    signal score2_5 : unsigned(3 downto 0);
+	signal score1_1 : unsigned(3 downto 0) := (others => '0');
+    signal score1_2 : unsigned(3 downto 0) := (others => '0');
+    signal score1_3 : unsigned(3 downto 0) := (others => '0');
+    signal score1_4 : unsigned(3 downto 0) := (others => '0');
+    signal score1_5 : unsigned(3 downto 0) := (others => '0');
+	signal score2_1 : unsigned(3 downto 0) := (others => '0');
+    signal score2_2 : unsigned(3 downto 0) := (others => '0');
+    signal score2_3 : unsigned(3 downto 0) := (others => '0');
+    signal score2_4 : unsigned(3 downto 0) := (others => '0');
+    signal score2_5 : unsigned(3 downto 0) := (others => '0');
 	constant top_hitbox : integer := 380;
 	constant bot_hitbox : integer := 460;
 	
 begin
 	process (score_clk) begin
         if rising_edge(score_clk) then
-			if (arrows_spawned(3) = '1' and p1_keyhit(3) = '1' and to_integer(unsigned(left_arr_ypos)) > top_hitbox and to_integer(unsigned(left_arr_ypos)) < bot_hitbox)
-								or (arrows_spawned(2) = '1' and p1_keyhit(2) = '1' and 
+			if (arrows_spawned(3) = '1' and p1_keyhit(3) = '0' and to_integer(unsigned(left_arr_ypos)) > top_hitbox and to_integer(unsigned(left_arr_ypos)) < bot_hitbox)
+								or (arrows_spawned(2) = '1' and p1_keyhit(2) = '0' and 
 								to_integer(unsigned(top_arr_ypos)) > top_hitbox and to_integer(unsigned(top_arr_ypos)) < bot_hitbox)
-								or (arrows_spawned(1) = '1' and p1_keyhit(1) = '1' and 
+								or (arrows_spawned(1) = '1' and p1_keyhit(1) = '0' and 
 								to_integer(unsigned(right_arr_ypos)) > top_hitbox and to_integer(unsigned(right_arr_ypos)) < bot_hitbox)
-								or (arrows_spawned(0) = '1' and p1_keyhit(0) = '1' and 
+								or (arrows_spawned(0) = '1' and p1_keyhit(0) = '0' and 
 								to_integer(unsigned(down_arr_ypos)) > top_hitbox and to_integer(unsigned(down_arr_ypos)) < bot_hitbox) then
 			
                 if (score1_2 = 10 and not (score1_1 = 10)) then
                     score1_1 <= score1_1 + 1;
+				elsif (score1_1 = 10) then
+					score1_1 <= "0000";
                 end if;
                 if (score1_3 = 10 and not (score1_2 = 10)) then
                     score1_2 <= score1_2 + 1;
+				elsif (score1_2 = 10) then
+					score1_2 <= "0000";
                 end if;
                 if (score1_4 = 10 and not (score1_3 = 10)) then
                     score1_3 <= score1_3 + 1;
+				elsif (score1_3 = 10) then
+					score1_3 <= "0000";
                 end if;
                 if (score1_5 = 10 and not (score1_4 = 10)) then
                     score1_4 <= score1_4 + 1;
+				elsif (score1_4 = 10) then
+					score1_4 <= "0000";
                 end if;
-                if not(score1_5 = 10) then
+                if score1_5 < 10 then
                     score1_5 <= score1_5 + 1;
                 else 
                     score1_5 <= "0000";
