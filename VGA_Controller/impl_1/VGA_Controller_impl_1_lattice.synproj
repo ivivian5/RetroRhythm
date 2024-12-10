@@ -49,6 +49,7 @@
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/ROM.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/pattern_gen2.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrows_on2008.vhd"
+"Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/big_start_rom.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/dig0_rom.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/dig1_rom.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/dig2_rom.vhd"
@@ -74,6 +75,8 @@
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/start_screen.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/top_arr_rom.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/top_out.vhd"
+"Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrow_rom.vhd"
+"Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrout_rom.vhd"
 
 
 -path "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller"

@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec 10 01:24:15 2024
+Tue Dec 10 02:40:00 2024
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f VGA_Controller_impl_1_lattice.synproj -gui -msgset Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/promote.xml 
@@ -137,6 +137,8 @@ VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_
 VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrows_on2008.vhd
 VHDL library = work
+VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/big_start_rom.vhd
+VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/dig0_rom.vhd
 VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/dig1_rom.vhd
@@ -186,6 +188,10 @@ VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/top_arr_rom.vhd
 VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/top_out.vhd
+VHDL library = work
+VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrow_rom.vhd
+VHDL library = work
+VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrout_rom.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
@@ -268,8 +274,13 @@ INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/so
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd
 
-INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(295): analyzing entity arrows. VHDL-1012
-INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(306): analyzing architecture synth. VHDL-1010
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(584): analyzing entity arrows. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(595): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/big_start_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/big_start_rom.vhd
+
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/big_start_rom.vhd(5): analyzing entity rom. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/big_start_rom.vhd(14): analyzing architecture sim. VHDL-1010
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/dig0_rom.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/dig0_rom.vhd
 
@@ -384,6 +395,7 @@ Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/start_screen.vhd
 
 INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/start_screen.vhd(5): analyzing entity rom. VHDL-1012
+WARNING <35921177> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/start_screen.vhd(5): duplicate entity name rom. VHDL-1177
 INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/start_screen.vhd(14): analyzing architecture sim. VHDL-1010
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/top_arr_rom.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/top_arr_rom.vhd
@@ -395,26 +407,20 @@ Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl
 
 INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/top_out.vhd(5): analyzing entity top_outline. VHDL-1012
 INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/top_out.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd
+
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd(5): analyzing entity arrow_rom. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrout_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrout_rom.vhd
+
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrout_rom.vhd(5): analyzing entity outline_rom. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrout_rom.vhd(14): analyzing architecture sim. VHDL-1010
 INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/impl_1". VHDL-1504
 Top module language type = VHDL.
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[7] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[6] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[5] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[4] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[3] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[2] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[1] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[0] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[7] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[6] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[5] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[4] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[3] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[2] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[1] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[0] remains unconnected for this instance. VDB-5049
 Top module name (VHDL, mixed language): top
                                                          
 
@@ -454,85 +460,46 @@ WARNING <35001771> - synthesis: Initial value found on net endgame will be ignor
 WARNING <35001771> - synthesis: Initial value found on net music_on will be ignored due to unrecognized driver type
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[7] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[6] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[5] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[4] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[3] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[2] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[1] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_x[0] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[7] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[6] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[5] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[4] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[3] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[2] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[1] remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port addr_y[0] remains unconnected for this instance. VDB-5049
 WARNING <35931002> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/mypll/rtl/mypll.v(139): net \pll_inst/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING <35931002> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/mypll/rtl/mypll.v(140): net \pll_inst/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/scoreword_rom.vhd(15): net \pattern_inst/myscore/score_disp_inst/addr[15] does not have a driver. VDB-1002
 ######## Missing driver on net \pll_inst/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \pll_inst/lscc_pll_inst/sdi_i. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[15]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[14]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[13]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[12]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[11]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[10]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[9]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[8]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[7]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[6]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[5]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[4]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[3]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[2]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[1]. Patching with GND.
-######## Missing driver on net \pattern_inst/myscore/score_disp_inst/addr[0]. Patching with GND.
 
 
 
+CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/leftarr_inst/data is stuck at One
 CRITICAL <35001747> - synthesis: Bit 5 of Register \pattern_inst/mytopout/data is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \pattern_inst/mytopout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 1 of Register \pattern_inst/mytopout/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 0 of Register \pattern_inst/mytopout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 5 of Register \pattern_inst/mydownout/data is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \pattern_inst/mydownout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 1 of Register \pattern_inst/mydownout/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 0 of Register \pattern_inst/mydownout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 5 of Register \pattern_inst/myrightout/data is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \pattern_inst/myrightout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 1 of Register \pattern_inst/myrightout/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 0 of Register \pattern_inst/myrightout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 5 of Register \pattern_inst/myleftout/data is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \pattern_inst/myleftout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 1 of Register \pattern_inst/myleftout/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 0 of Register \pattern_inst/myleftout/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 5 of Register \pattern_inst/myscore/score_disp_inst/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 3 of Register \pattern_inst/myscore/score_disp_inst/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 2 of Register \pattern_inst/myscore/score_disp_inst/data is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 1 of Register \pattern_inst/myscore/score_disp_inst/data is stuck at Zero
-CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/myscore/score_disp_inst/data is stuck at One
-CRITICAL <35001747> - synthesis: Bit 4 of Register \pattern_inst/myscore/score_disp_inst/data is stuck at Zero
+CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/uparr_inst/data is stuck at One
+CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/rightarr_inst/data is stuck at One
+CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/downarr_inst/data is stuck at One
 CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/myscore/num7_disp_inst/data is stuck at One
 WARNING <35935040> - synthesis: Register \arrows_inst/my_right_arr_ypos__i0 clock is stuck at Zero. VDB-5040
-WARNING <35935040> - synthesis: Register \arrows_inst/my_down_arr_ypos__i0 clock is stuck at Zero. VDB-5040
 WARNING <35935040> - synthesis: Register \arrows_inst/my_top_arr_ypos__i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/my_down_arr_ypos__i0 clock is stuck at Zero. VDB-5040
 WARNING <35935040> - synthesis: Register \arrows_inst/my_left_arr_ypos__i0 clock is stuck at Zero. VDB-5040
-Duplicate register/latch removal. \pattern_inst/myarrow4/data_i3 is a one-to-one match with \pattern_inst/myarrow4/data_i2.
-Duplicate register/latch removal. \pattern_inst/myarrow3/data_i3 is a one-to-one match with \pattern_inst/myarrow3/data_i2.
-Duplicate register/latch removal. \pattern_inst/myarrow2/data_i3 is a one-to-one match with \pattern_inst/myarrow2/data_i2.
-Duplicate register/latch removal. \pattern_inst/myarrow1/data_i3 is a one-to-one match with \pattern_inst/myarrow1/data_i2.
-Duplicate register/latch removal. \pattern_inst/myarrow1/data_i0 is a one-to-one match with \pattern_inst/myarrow1/data_i1.
-Duplicate register/latch removal. \pattern_inst/myarrow2/data_i0 is a one-to-one match with \pattern_inst/myarrow2/data_i1.
-Duplicate register/latch removal. \pattern_inst/myarrow3/data_i0 is a one-to-one match with \pattern_inst/myarrow3/data_i1.
-Duplicate register/latch removal. \pattern_inst/myarrow4/data_i0 is a one-to-one match with \pattern_inst/myarrow4/data_i1.
-Duplicate register/latch removal. \pattern_inst/myarrow4/data_i5 is a one-to-one match with \pattern_inst/myarrow4/data_i4.
-Duplicate register/latch removal. \pattern_inst/myarrow3/data_i5 is a one-to-one match with \pattern_inst/myarrow3/data_i4.
-Duplicate register/latch removal. \pattern_inst/myarrow2/data_i5 is a one-to-one match with \pattern_inst/myarrow2/data_i4.
-Duplicate register/latch removal. \pattern_inst/myarrow1/data_i5 is a one-to-one match with \pattern_inst/myarrow1/data_i4.
-Duplicate register/latch removal. \pattern_inst/myarrow1/data_i0 is a one-to-one match with \pattern_inst/myarrow1/data_i5.
-Duplicate register/latch removal. \pattern_inst/myarrow2/data_i0 is a one-to-one match with \pattern_inst/myarrow2/data_i5.
-Duplicate register/latch removal. \pattern_inst/myarrow3/data_i0 is a one-to-one match with \pattern_inst/myarrow3/data_i5.
-Duplicate register/latch removal. \pattern_inst/myarrow4/data_i0 is a one-to-one match with \pattern_inst/myarrow4/data_i5.
+Duplicate register/latch removal. \pattern_inst/downarr_inst/data_i3 is a one-to-one match with \pattern_inst/downarr_inst/data_i2.
+Duplicate register/latch removal. \pattern_inst/rightarr_inst/data_i3 is a one-to-one match with \pattern_inst/rightarr_inst/data_i2.
+Duplicate register/latch removal. \pattern_inst/uparr_inst/data_i3 is a one-to-one match with \pattern_inst/uparr_inst/data_i2.
+Duplicate register/latch removal. \pattern_inst/leftarr_inst/data_i3 is a one-to-one match with \pattern_inst/leftarr_inst/data_i2.
+Duplicate register/latch removal. \pattern_inst/leftarr_inst/data_i1 is a one-to-one match with \pattern_inst/leftarr_inst/data_i4.
+Duplicate register/latch removal. \pattern_inst/uparr_inst/data_i1 is a one-to-one match with \pattern_inst/uparr_inst/data_i4.
+Duplicate register/latch removal. \pattern_inst/rightarr_inst/data_i1 is a one-to-one match with \pattern_inst/rightarr_inst/data_i4.
+Duplicate register/latch removal. \pattern_inst/downarr_inst/data_i1 is a one-to-one match with \pattern_inst/downarr_inst/data_i4.
+Duplicate register/latch removal. \pattern_inst/downarr_inst/data_i5 is a one-to-one match with \pattern_inst/downarr_inst/data_i1.
+Duplicate register/latch removal. \pattern_inst/rightarr_inst/data_i5 is a one-to-one match with \pattern_inst/rightarr_inst/data_i1.
+Duplicate register/latch removal. \pattern_inst/uparr_inst/data_i5 is a one-to-one match with \pattern_inst/uparr_inst/data_i1.
+Duplicate register/latch removal. \pattern_inst/leftarr_inst/data_i5 is a one-to-one match with \pattern_inst/leftarr_inst/data_i1.
 Duplicate register/latch removal. \pattern_inst/myscore/num7_disp_inst/data_i3 is a one-to-one match with \pattern_inst/myscore/num7_disp_inst/data_i2.
 INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
@@ -540,18 +507,18 @@ INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for Thunde
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
-Number of register bits => 370 of 5280 (7 % )
-EBR_B => 10
-CCU2 => 192
-FD1P3XZ => 370
+Number of register bits => 378 of 5280 (7 % )
+EBR_B => 11
+CCU2 => 179
+FD1P3XZ => 378
 IB => 3
 IOL_B => 4
-LUT4 => 2256
+LUT4 => 2317
 OB => 12
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 6
-Number of even-length carry chains : 23
+Number of odd-length carry chains : 10
+Number of even-length carry chains : 18
 
 
 <A name="lse_bbox"></A><B><U><big>BlackBox Report</big></U></B>
@@ -574,23 +541,23 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vga_inst/pixel_y[3], loads : 230
-  Net : vga_inst/pixel_y[4], loads : 182
-  Net : vga_inst/pixel_y[5], loads : 173
-  Net : vga_inst/pixel_x[4], loads : 140
-  Net : vga_inst/pixel_x[5], loads : 139
-  Net : vga_inst/pixel_x[3], loads : 130
-  Net : vga_inst/pixel_x[6], loads : 127
+  Net : vga_inst/pixel_y[3], loads : 270
+  Net : vga_inst/pixel_y[4], loads : 203
+  Net : vga_inst/pixel_y[5], loads : 192
+  Net : vga_inst/pixel_x[5], loads : 154
+  Net : vga_inst/pixel_x[3], loads : 154
+  Net : vga_inst/pixel_x[4], loads : 148
+  Net : vga_inst/pixel_y[7], loads : 128
   Net : vga_inst/pixel_y[6], loads : 125
-  Net : vga_inst/pixel_y[7], loads : 124
-  Net : vga_inst/pixel_y[8], loads : 123
+  Net : vga_inst/pixel_y[8], loads : 116
+  Net : vga_inst/pixel_x[6], loads : 115
 ################### End Clock Report ##################
 
-Peak Memory Usage: 1049 MB
+Peak Memory Usage: 665 MB
 
 --------------------------------------------------------------
-Total CPU Time: 24 secs 
-Total REAL Time: 34 secs 
+Total CPU Time: 20 secs 
+Total REAL Time: 30 secs 
 --------------------------------------------------------------
 
 
