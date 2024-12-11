@@ -1,8 +1,10 @@
 # RetroRhythm
-ES4 Fall 2024 Final Project
+ES4 Fall 2024 Final Project - RETRO RHYTHM
 
 Written by
 Charlotte, Katherine, Tygan, Vivian
+
+Description: Two-player game of catching falling arrows on the arrow outlines.
 
 Folder VGA_Controller contains the Lattice formatted project files. 
 All relevant input files are included under VGA_Controller/source/impl_1:
