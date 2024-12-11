@@ -1,4 +1,0 @@
-v 4
-file . "hit_detect.vhd" "2168fd7439690cefc04e68b697e3abec2a8dfc91" "20241209022344.328":
-  entity scoring at 1( 0) + 0 on 13;
-  architecture synth of scoring at 23( 601) + 0 on 14;
