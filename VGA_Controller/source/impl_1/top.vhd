@@ -61,6 +61,7 @@ architecture synth of top is
 
     component FSM is
         port(
+			endsong : in std_logic;
 			endgame : in std_logic;
 			restart : in std_logic;
 			start : in std_logic;
@@ -91,7 +92,8 @@ architecture synth of top is
 	port(
 		clk_in : in std_logic;
 		sound: out std_logic;
-		start: in std_logic
+		start: in std_logic;
+		endsong : out std_logic
 		);
 	end component;
 	
@@ -124,6 +126,15 @@ architecture synth of top is
 		p2_score : out unsigned(19 downto 0)
 	);
 	end component;
+	
+	component clk_divider is
+		port(
+			clk_in : in std_logic;
+			div_num : in integer;
+			reset : in std_logic;
+			clk_out : out std_logic
+		);
+	end component;
 
     signal outglobal_o: std_logic;  
     signal valid: std_logic;  
@@ -150,6 +161,9 @@ architecture synth of top is
 	
 	signal p1_score: unsigned(19 downto 0); 
 	signal p2_score: unsigned(19 downto 0); 
+	
+	signal score_clk : std_logic;
+	signal endsong : std_logic := '0';
 
 begin
     pll_inst : mypll
@@ -203,6 +217,7 @@ begin
 			
     fsm_inst : FSM
         port map(
+			endsong => endsong,
 			endgame => endgame,
 			restart => restart,
 			start => start,
@@ -217,7 +232,8 @@ begin
         port map(
 			clk_in => outglobal_o,
 			sound => sound,
-			start => music_on
+			start => music_on,
+			endsong => endsong
         );
 
 	arrows_inst : arrows
@@ -233,7 +249,7 @@ begin
 		
 	scoring_inst : scoring
 		port map(
-			score_clk => outglobal_o,
+			score_clk => score_clk,
 			p1_keyhit => controller1,
 			p2_keyhit => controller2,
 			arrows_spawned => arrows_spawned,
@@ -244,6 +260,16 @@ begin
 			p1_score => p1_score,
 			p2_score => p2_score
 		);
+		
+	score_clk_inst : clk_divider
+		port map(
+			clk_in => outglobal_o,
+			div_num => 842333,
+			reset => '0',
+			clk_out => score_clk
+		);
+		
+	
 
     pll <= outcore_o;
 

@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 
 entity FSM is
     port(
+		endsong 		: in std_logic;
         endgame         : in std_logic;
         restart         : in std_logic;
         start           : in std_logic;
@@ -37,7 +38,7 @@ begin
                     flag <= "01";
                     if restart = '1' then  
                         s <= START_SCREEN;
-                    elsif endgame = '1' then
+                    elsif endgame = '1' or endsong = '1' then
                         s <= END_SCREEN;
                     else
                         s <= PLAY_GAME;
