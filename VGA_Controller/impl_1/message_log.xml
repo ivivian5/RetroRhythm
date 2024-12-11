@@ -1,57 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="PAR">
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-    </Task>
     <Task name="Export">
         <Message>
             <ID>1081100</ID>
@@ -61,34 +9,6 @@
         <Message>
             <ID>1191031</ID>
             <Severity>1</Severity>
-        </Message>
-    </Task>
-    <Task name="Map">
-        <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/pins.pdc</Dynamic>
-            <Dynamic>12</Dynamic>
-            <Dynamic>No port matched 'start_pressed'.</Dynamic>
-            <Navigation>Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/pins.pdc</Navigation>
-            <Navigation>12</Navigation>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>start_pressed</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>start_pressed</Dynamic>
-            <Dynamic>ldc_set_location -site {18} [get_ports start_pressed]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {18} [get_ports start_pressed]</Dynamic>
         </Message>
     </Task>
     <Task name="Synthesis">
@@ -627,10 +547,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/fsm.vhd(18): </Dynamic>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/fsm.vhd(19): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/fsm.vhd</Navigation>
-            <Navigation>18</Navigation>
+            <Navigation>19</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -651,18 +571,18 @@
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(584): </Dynamic>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(295): </Dynamic>
             <Dynamic>arrows</Dynamic>
             <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd</Navigation>
-            <Navigation>584</Navigation>
+            <Navigation>295</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(595): </Dynamic>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(306): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd</Navigation>
-            <Navigation>595</Navigation>
+            <Navigation>306</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -899,10 +819,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/hit_detect.vhd(24): </Dynamic>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/hit_detect.vhd(25): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/hit_detect.vhd</Navigation>
-            <Navigation>24</Navigation>
+            <Navigation>25</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1091,6 +1011,54 @@
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd(5): </Dynamic>
+            <Dynamic>clk_divider</Dynamic>
+            <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd(14): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd(5): </Dynamic>
+            <Dynamic>music_decoder</Dynamic>
+            <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd(12): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd(5): </Dynamic>
+            <Dynamic>music</Dynamic>
+            <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd(14): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
             <Dynamic>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd(5): </Dynamic>
             <Dynamic>arrow_rom</Dynamic>
             <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd</Navigation>
@@ -1197,6 +1165,11 @@
             <Dynamic>music_on</Dynamic>
         </Message>
         <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>endsong</Dynamic>
+        </Message>
+        <Message>
             <ID>35935049</ID>
             <Severity>16</Severity>
             <Dynamic>sclk_i</Dynamic>
@@ -1221,6 +1194,12 @@
             <Dynamic>\pll_inst/lscc_pll_inst/sdi_i</Dynamic>
             <Navigation>z:/es4/final_proj_git/retrorhythm/vga_controller/mypll/rtl/mypll.v</Navigation>
             <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\pattern_inst/downarr_inst/data</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
@@ -1310,12 +1289,6 @@
             <ID>35001748</ID>
             <Severity>256</Severity>
             <Dynamic>0</Dynamic>
-            <Dynamic>\pattern_inst/downarr_inst/data</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001748</ID>
-            <Severity>256</Severity>
-            <Dynamic>0</Dynamic>
             <Dynamic>\pattern_inst/myscore/num7_disp_inst/data</Dynamic>
         </Message>
         <Message>
@@ -1333,13 +1306,13 @@
         <Message>
             <ID>35935040</ID>
             <Severity>16</Severity>
-            <Dynamic>\arrows_inst/my_down_arr_ypos__i0</Dynamic>
+            <Dynamic>\arrows_inst/my_left_arr_ypos__i0</Dynamic>
             <Dynamic>Zero</Dynamic>
         </Message>
         <Message>
             <ID>35935040</ID>
             <Severity>16</Severity>
-            <Dynamic>\arrows_inst/my_left_arr_ypos__i0</Dynamic>
+            <Dynamic>\arrows_inst/my_down_arr_ypos__i0</Dynamic>
             <Dynamic>Zero</Dynamic>
         </Message>
         <Message>
@@ -1362,19 +1335,26 @@
             <Dynamic>mypll</Dynamic>
         </Message>
         <Message>
-            <ID>35811145</ID>
-            <Severity>1</Severity>
-            <Dynamic>fsm_inst/s_0__I_0</Dynamic>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
         </Message>
         <Message>
-            <ID>35811146</ID>
-            <Severity>1</Severity>
-            <Dynamic>fsm_inst/music_on</Dynamic>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
         </Message>
         <Message>
-            <ID>35811146</ID>
-            <Severity>1</Severity>
-            <Dynamic>sound_c</Dynamic>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>
@@ -1385,6 +1365,64 @@
             <ID>70001944</ID>
             <Severity>16</Severity>
             <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {outglobal_o} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {pll_c} -source [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_inst/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1026001</ID>
+            <Severity>16</Severity>
+            <Dynamic>Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/pins.pdc</Dynamic>
+            <Dynamic>12</Dynamic>
+            <Dynamic>No port matched 'start_pressed'.</Dynamic>
+            <Navigation>Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/pins.pdc</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>start_pressed</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>start_pressed</Dynamic>
+            <Dynamic>ldc_set_location -site {18} [get_ports start_pressed]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {18} [get_ports start_pressed]</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

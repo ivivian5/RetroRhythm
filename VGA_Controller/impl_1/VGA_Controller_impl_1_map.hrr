@@ -4,78 +4,80 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       4.00        100.0
-                                  LUT4	       2774        100.0
-                               LUTGATE	       2416        100.0
-                                LUTCCU	        358        100.0
+                                  LUT4	       3914        100.0
+                               LUTGATE	       3420        100.0
+                                LUTCCU	        494        100.0
                                  IOREG	          4        100.0
                                  IOBUF	         15        100.0
-                                PFUREG	        377        100.0
+                                PFUREG	        514        100.0
                                    EBR	         11        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                                   FSM	          1         0.3
-                                   NES	          1         1.4
-                                arrows	          1         8.4
+                                   FSM	          1         0.1
+                                   NES	          1         1.1
+                                arrows	          1         6.4
+                        clk_divider_U7	          1         2.2
+                                 music	          1        25.9
                                  mypll	          1         0.0
-                           pattern_gen	          1        76.7
-                               scoring	          1         3.8
-                                   vga	          1         1.4
+                           pattern_gen	          1        52.6
+                               scoring	          1         3.3
+                                   vga	          1         1.0
 ---------------------------------------------------
 Report for cell pattern_gen
    Instance path: top/pattern_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	       2129        76.7
-                               LUTGATE	       1977        81.8
-                                LUTCCU	        152        42.5
-                                PFUREG	         68        18.0
+                                  LUT4	       2059        52.6
+                               LUTGATE	       1907        55.8
+                                LUTCCU	        152        30.8
+                                PFUREG	         68        13.2
                                    EBR	         11        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                             arrow_rom	          1         1.0
-                          arrow_rom_U0	          1         1.1
-                          arrow_rom_U4	          1         0.9
-                          arrow_rom_U5	          1         1.2
-                             endscreen	          1        19.4
-                           outline_rom	          1         1.0
-                        outline_rom_U1	          1         1.0
-                        outline_rom_U2	          1         0.9
-                        outline_rom_U3	          1         1.0
-                                   rom	          1        21.2
-                             score_rom	          1        16.2
+                             arrow_rom	          1         0.7
+                          arrow_rom_U0	          1         0.7
+                          arrow_rom_U4	          1         0.4
+                          arrow_rom_U5	          1         0.8
+                             endscreen	          1        13.9
+                           outline_rom	          1         0.6
+                        outline_rom_U1	          1         0.7
+                        outline_rom_U2	          1         0.7
+                        outline_rom_U3	          1         0.7
+                                   rom	          1        13.8
+                             score_rom	          1        10.5
 ---------------------------------------------------
 Report for cell arrow_rom
    Instance path: top/pattern_inst/uparr_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         29         1.0
-                               LUTGATE	         29         1.2
-                                PFUREG	          2         0.5
+                                  LUT4	         29         0.7
+                               LUTGATE	         29         0.8
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell arrow_rom_U0
    Instance path: top/pattern_inst/rightarr_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         30         1.1
-                               LUTGATE	         30         1.2
-                                PFUREG	          2         0.5
+                                  LUT4	         27         0.7
+                               LUTGATE	         27         0.8
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell outline_rom
    Instance path: top/pattern_inst/mytopout
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         27         1.0
-                               LUTGATE	         27         1.1
-                                PFUREG	          2         0.5
+                                  LUT4	         25         0.6
+                               LUTGATE	         25         0.7
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell score_rom
    Instance path: top/pattern_inst/myscore
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        450        16.2
-                               LUTGATE	        442        18.3
-                                LUTCCU	          8         2.2
-                                PFUREG	         36         9.5
+                                  LUT4	        412        10.5
+                               LUTGATE	        404        11.8
+                                LUTCCU	          8         1.6
+                                PFUREG	         36         7.0
                                    EBR	         11        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
@@ -122,7 +124,7 @@ Report for cell num7_disp
                                   cell	      count    Res Usage(%)
                                   LUT4	          2         0.1
                                LUTGATE	          2         0.1
-                                PFUREG	          2         0.5
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell num6_disp
    Instance path: top/pattern_inst/myscore/num6_disp_inst
@@ -170,77 +172,124 @@ Report for cell rom
    Instance path: top/pattern_inst/myrom
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        589        21.2
-                               LUTGATE	        589        24.4
-                                PFUREG	          5         1.3
+                                  LUT4	        539        13.8
+                               LUTGATE	        539        15.8
+                                PFUREG	          5         1.0
 ---------------------------------------------------
 Report for cell outline_rom_U1
    Instance path: top/pattern_inst/myrightout
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         28         1.0
-                               LUTGATE	         28         1.2
-                                PFUREG	          2         0.5
+                                  LUT4	         26         0.7
+                               LUTGATE	         26         0.8
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell outline_rom_U2
    Instance path: top/pattern_inst/myleftout
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         26         0.9
-                               LUTGATE	         26         1.1
-                                PFUREG	          2         0.5
+                                  LUT4	         27         0.7
+                               LUTGATE	         27         0.8
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell endscreen
    Instance path: top/pattern_inst/myend
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        537        19.4
-                               LUTGATE	        537        22.2
-                                PFUREG	          5         1.3
+                                  LUT4	        543        13.9
+                               LUTGATE	        543        15.9
+                                PFUREG	          5         1.0
 ---------------------------------------------------
 Report for cell outline_rom_U3
    Instance path: top/pattern_inst/mydownout
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         29         1.0
-                               LUTGATE	         29         1.2
-                                PFUREG	          2         0.5
+                                  LUT4	         29         0.7
+                               LUTGATE	         29         0.8
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell arrow_rom_U4
    Instance path: top/pattern_inst/leftarr_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         26         0.9
-                               LUTGATE	         26         1.1
-                                PFUREG	          2         0.5
+                                  LUT4	         16         0.4
+                               LUTGATE	         16         0.5
+                                PFUREG	          2         0.4
 ---------------------------------------------------
 Report for cell arrow_rom_U5
    Instance path: top/pattern_inst/downarr_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         34         1.2
-                               LUTGATE	         34         1.4
-                                PFUREG	          2         0.5
+                                  LUT4	         33         0.8
+                               LUTGATE	         33         1.0
+                                PFUREG	          2         0.4
+---------------------------------------------------
+Report for cell FSM
+   Instance path: top/fsm_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.1
+                               LUTGATE	          5         0.1
+                                PFUREG	          5         1.0
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/vga_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       2.00        50.0
-                                  LUT4	         40         1.4
-                               LUTGATE	         16         0.7
-                                LUTCCU	         24         6.7
+                                  LUT4	         40         1.0
+                               LUTGATE	         16         0.5
+                                LUTCCU	         24         4.9
                                  IOREG	          2        50.0
-                                PFUREG	         41        10.9
+                                PFUREG	         41         8.0
 ---------------------------------------------------
 Report for cell arrows
    Instance path: top/arrows_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        233         8.4
-                               LUTGATE	         73         3.0
-                                LUTCCU	        160        44.7
-                                PFUREG	        151        40.1
+                                  LUT4	        249         6.4
+                               LUTGATE	         89         2.6
+                                LUTCCU	        160        32.4
+                                PFUREG	        151        29.4
+---------------------------------------------------
+Report for cell music
+   Instance path: top/music_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1015        25.9
+                               LUTGATE	        913        26.7
+                                LUTCCU	        102        20.6
+                                PFUREG	        103        20.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           clk_divider	          1         2.1
+                        clk_divider_U6	          1         1.9
+                         music_decoder	          1         0.4
+---------------------------------------------------
+Report for cell clk_divider
+   Instance path: top/music_inst/sec_div
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         84         2.1
+                               LUTGATE	         50         1.5
+                                LUTCCU	         34         6.9
+                                PFUREG	         33         6.4
+---------------------------------------------------
+Report for cell clk_divider_U6
+   Instance path: top/music_inst/music_div
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         74         1.9
+                               LUTGATE	         40         1.2
+                                LUTCCU	         34         6.9
+                                PFUREG	         33         6.4
+---------------------------------------------------
+Report for cell music_decoder
+   Instance path: top/music_inst/decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.4
+                               LUTGATE	         16         0.5
 ---------------------------------------------------
 Report for cell mypll
    Instance path: top/pll_inst
@@ -255,29 +304,30 @@ Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
+Report for cell clk_divider_U7
+   Instance path: top/score_clk_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         88         2.2
+                               LUTGATE	         54         1.6
+                                LUTCCU	         34         6.9
+                                PFUREG	         33         6.4
+---------------------------------------------------
 Report for cell NES
    Instance path: top/NESControllers
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       2.00        50.0
-                                  LUT4	         39         1.4
-                               LUTGATE	         17         0.7
-                                LUTCCU	         22         6.1
+                                  LUT4	         42         1.1
+                               LUTGATE	         20         0.6
+                                LUTCCU	         22         4.5
                                  IOREG	          2        50.0
-                                PFUREG	         33         8.8
----------------------------------------------------
-Report for cell FSM
-   Instance path: top/fsm_inst
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          7         0.3
-                               LUTGATE	          7         0.3
-                                PFUREG	          4         1.1
+                                PFUREG	         33         6.4
 ---------------------------------------------------
 Report for cell scoring
    Instance path: top/scoring_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        106         3.8
-                               LUTGATE	        106         4.4
-                                PFUREG	         80        21.2
+                                  LUT4	        130         3.3
+                               LUTGATE	        130         3.8
+                                PFUREG	         80        15.6

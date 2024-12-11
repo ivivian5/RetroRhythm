@@ -219,7 +219,7 @@ begin
             u_addr_y <= unsigned(addr_y);
             mapped_ypos <= std_logic_vector(u_addr_y - 4);
 
-			if (u_addr_y > top_scoreline + 1 and u_addr_y < bot_scoreline - 1) then
+			if (u_addr_y > top_scoreline - 1 and u_addr_y < bot_scoreline + 1) then
                 if (u_addr_x > p1_player_xpos - 1 and u_addr_x < p1_player_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_player_xpos);
                     data <= player_disp_out;
@@ -243,7 +243,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p1_dig2_xpos - 1 and u_addr_x < p1_dig2_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig2_xpos);
@@ -258,7 +258,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p1_dig3_xpos - 1 and u_addr_x < p1_dig3_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig3_xpos);
@@ -273,7 +273,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p1_dig4_xpos - 1 and u_addr_x < p1_dig4_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig4_xpos);
@@ -288,7 +288,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p1_dig5_xpos - 1 and u_addr_x < p1_dig5_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p1_dig5_xpos);
@@ -303,16 +303,16 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 -- -- player 2
-                elsif (u_addr_x > p2_player_xpos and u_addr_x < p2_player_xpos + 17) then
+                elsif (u_addr_x > p2_player_xpos - 1 and u_addr_x < p2_player_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_player_xpos);
                     data <= player_disp_out;
-                elsif (u_addr_x > p2_num_xpos and u_addr_x < p2_num_xpos + 17) then
+                elsif (u_addr_x > p2_num_xpos - 1 and u_addr_x < p2_num_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_num_xpos);
                     data <= num2_disp_out;
-                elsif (u_addr_x > p2_score_xpos and u_addr_x < p2_score_xpos + 121) then
+                elsif (u_addr_x > p2_score_xpos - 1 and u_addr_x < p2_score_xpos + 121) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_score_xpos);
                     data <= score_disp_out;
                 
@@ -329,7 +329,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p2_dig2_xpos - 1 and u_addr_x < p2_dig2_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig2_xpos);
@@ -344,7 +344,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p2_dig3_xpos - 1 and u_addr_x < p2_dig3_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig3_xpos);
@@ -359,7 +359,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p2_dig4_xpos - 1 and u_addr_x < p2_dig4_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig4_xpos);
@@ -374,7 +374,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
                 elsif (u_addr_x > p2_dig5_xpos - 1 and u_addr_x < p2_dig5_xpos + 17) then
                     mapped_xpos <= std_logic_vector(u_addr_x - p2_dig5_xpos);
@@ -389,7 +389,7 @@ begin
                         when "0111" => data <= num7_disp_out;
                         when "1000" => data <= num8_disp_out;
                         when "1001" => data <= num9_disp_out;
-                        when others => data <= "000000";
+                        when others => data <= num0_disp_out;
                     end case;
 				else
 					data <= "000001";

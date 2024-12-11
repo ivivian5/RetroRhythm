@@ -75,6 +75,9 @@
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/start_screen.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/top_arr_rom.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/top_out.vhd"
+"Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/clk_divider.vhd"
+"Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/music_decoder.vhd"
+"Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/music.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrow_rom.vhd"
 "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrout_rom.vhd"
 

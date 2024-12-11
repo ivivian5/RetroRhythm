@@ -1,0 +1,19 @@
+#Start recording tcl command: 12/10/2024 01:31:16
+#Project Location: Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller; Project name: VGA_Controller
+prj_open "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/VGA_Controller.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_add_source "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrow_rom.vhd" "Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrout_rom.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+#Stop recording: 12/10/2024 02:59:38

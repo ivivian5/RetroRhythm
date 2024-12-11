@@ -48,7 +48,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Tue Dec 10 02:41:07 2024
+Tue Dec 10 04:19:50 2024
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+------------------------------------------+
@@ -68,7 +68,7 @@ Pinout by Port Name:
 | rgb[3]    | 35/0     | LVCMOS33_OUT | PR13B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | rgb[4]    | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | rgb[5]    | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| sound     | 15/1     | LVCMOS33_OUT | PL25A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sound     | 19/1     | LVCMOS33_OUT | PL22B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 +-----------+----------+--------------+-------+------------------------------------------+
 
 Vccio by Bank:
@@ -94,11 +94,11 @@ Vccio by Bank:
 | 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
 | 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
-| 15/1     | sound               |            | LVCMOS33_OUT | PL25A | SPISCK           |
+| 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
 | 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
 | 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
 | 18/1     |     unused, PULL:UP |            |              | PL23B |                  |
-| 19/1     |     unused, PULL:UP |            |              | PL22B |                  |
+| 19/1     | sound               | LOCATED    | LVCMOS33_OUT | PL22B |                  |
 | 20/1     | ref_clk_i           | LOCATED    | LVCMOS33_IN  | PL20B | PCLKT1_0         |
 | 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
 | 23/0     | VSYNC               | LOCATED    | LVCMOS33_OUT | PR20A |                  |
@@ -159,7 +159,7 @@ ldc_set_location -site {32} [ get_ports {rgb[2]} ]
 ldc_set_location -site {35} [ get_ports {rgb[3]} ]
 ldc_set_location -site {31} [ get_ports {rgb[4]} ]
 ldc_set_location -site {37} [ get_ports {rgb[5]} ]
-ldc_set_location -site {15} [ get_ports {sound} ]
+ldc_set_location -site {19} [ get_ports {sound} ]
 
 
 
@@ -167,7 +167,7 @@ ldc_set_location -site {15} [ get_ports {sound} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Tue Dec 10 02:41:07 2024
+Tue Dec 10 04:19:50 2024
 
 
 

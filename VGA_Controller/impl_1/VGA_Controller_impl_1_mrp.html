@@ -48,7 +48,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Tue Dec 10 02:40:32 2024
+Mapped on: Tue Dec 10 04:18:50 2024
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -59,13 +59,13 @@ Command line:   map -i VGA_Controller_impl_1_syn.udb -pdc
      -msgset Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/promote.xml
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 377 out of  5280 (7%)
+   Number of slice registers: 514 out of  5280 (10%)
    Number of I/O registers:      4 out of   117 (3%)
-   Number of LUT4s:           2774 out of  5280 (53%)
-      Number of logic LUT4s:             2315
-      Number of inserted feedthru LUT4s:  92
-      Number of replicated LUT4s:          9
-      Number of ripple logic:            179 (358 LUT4s)
+   Number of LUT4s:           3914 out of  5280 (74%)
+      Number of logic LUT4s:             3320
+      Number of inserted feedthru LUT4s:  93
+      Number of replicated LUT4s:          7
+      Number of ripple logic:            247 (494 LUT4s)
    Number of IO sites used:   15 out of 39 (38%)
       Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -87,61 +87,60 @@ Command line:   map -i VGA_Controller_impl_1_syn.udb -pdc
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             11 out of 30 (36%)
    Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  3
-      Net outglobal_o: 307 loads, 307 rising, 0 falling (Driver: Pin
+   Number of Clocks:  5
+      Net outglobal_o: 282 loads, 282 rising, 0 falling (Driver: Pin
      pll_inst.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net music_inst.clk_sec: 22 loads, 22 rising, 0 falling (Driver: Pin
+     music_inst.sec_div.clk_sec_I_0/Q)
       Net ref_clk_i_c: 1 loads, 1 rising, 0 falling (Driver: Port ref_clk_i)
+      Net score_clk: 80 loads, 80 rising, 0 falling (Driver: Pin
+     score_clk_inst.score_clk_I_0/Q)
       Net nesClk_c: 14 loads, 14 rising, 0 falling (Driver: Pin
      NESControllers.nesClk_c_I_0/Z)
-   Number of Clock Enables:  13
-      Net sound_pad.vcc: 33 loads, 0 SLICEs
-      Net pattern_inst.myscore.mapped_xpos_2__N_568: 4 loads, 4 SLICEs
-      Net rows_0__N_91: 6 loads, 6 SLICEs
-      Net scoring_inst.score1_4_0__N_483: 4 loads, 4 SLICEs
-      Net scoring_inst.score1_3_0__N_471: 4 loads, 4 SLICEs
+   Number of Clock Enables:  15
+      Net VCC_net: 33 loads, 0 SLICEs
 
-      Net scoring_inst.score1_2_0__N_459: 4 loads, 4 SLICEs
-      Net scoring_inst.score1_1_0__N_447: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_2_0__N_519: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_1_0__N_507: 4 loads, 4 SLICEs
-      Net scoring_inst.score1_5_0__N_495: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_3_0__N_531: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_5_0__N_555: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_4_0__N_543: 4 loads, 4 SLICEs
-   Number of LSRs:  22
+      Net pattern_inst.myscore.mapped_xpos_2__N_631: 4 loads, 4 SLICEs
+      Net score2_4_0__N_579: 4 loads, 4 SLICEs
+      Net score2_3_0__N_571: 4 loads, 4 SLICEs
+      Net score2_2_0__N_563: 4 loads, 4 SLICEs
+      Net score2_1_0__N_555: 4 loads, 4 SLICEs
+      Net score2_5_0__N_587: 4 loads, 4 SLICEs
+      Net score1_1_0__N_515: 4 loads, 4 SLICEs
+      Net rows_0__N_90: 6 loads, 6 SLICEs
+      Net score1_2_0__N_523: 4 loads, 4 SLICEs
+      Net score1_5_0__N_547: 4 loads, 4 SLICEs
+      Net music_on: 4 loads, 4 SLICEs
+      Net score1_3_0__N_531: 4 loads, 4 SLICEs
+      Net score1_4_0__N_539: 4 loads, 4 SLICEs
+      Net music_inst.reset_div_N_727: 1 loads, 1 SLICEs
+   Number of LSRs:  15
       Net pixel_x[9]: 2 loads, 2 SLICEs
-      Net rgb_c_0_N_585: 6 loads, 6 SLICEs
-      Net pattern_inst.uparr_data_1__N_114: 1 loads, 1 SLICEs
-      Net pattern_inst.rightarr_data_1__N_111: 1 loads, 1 SLICEs
-      Net pattern_inst.leftarr_data_1__N_105: 1 loads, 1 SLICEs
-      Net pattern_inst.downarr_data_1__N_108: 1 loads, 1 SLICEs
-      Net columns_0__N_62: 6 loads, 6 SLICEs
-      Net rows_0__N_92: 6 loads, 6 SLICEs
-      Net vga_inst.valid_N_592: 1 loads, 1 SLICEs
-      Net NESControllers.NEScount_0__N_323: 11 loads, 11 SLICEs
-      Net fsm_inst.s[1]: 2 loads, 2 SLICEs
-      Net fsm_inst.flag_1__N_42: 1 loads, 1 SLICEs
-      Net scoring_inst.score1_4_0__N_484: 4 loads, 4 SLICEs
-      Net scoring_inst.score1_3_0__N_472: 4 loads, 4 SLICEs
-      Net scoring_inst.score1_2_0__N_460: 4 loads, 4 SLICEs
-      Net scoring_inst.score1_1_0__N_448: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_2_0__N_520: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_1_0__N_508: 4 loads, 4 SLICEs
-      Net scoring_inst.score1_5_0__N_496: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_3_0__N_532: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_5_0__N_556: 4 loads, 4 SLICEs
-      Net scoring_inst.score2_4_0__N_544: 4 loads, 4 SLICEs
+      Net pattern_inst.leftarr_data_1__N_104: 1 loads, 1 SLICEs
+      Net rgb_c_0_N_712: 6 loads, 6 SLICEs
+      Net uparr_data_1__N_113: 1 loads, 1 SLICEs
+      Net rightarr_data_1__N_110: 1 loads, 1 SLICEs
+      Net downarr_data_1__N_107: 1 loads, 1 SLICEs
+      Net endsong: 80 loads, 80 SLICEs
+      Net columns_0__N_61: 6 loads, 6 SLICEs
+      Net rows_0__N_91: 6 loads, 6 SLICEs
+      Net s[1]: 2 loads, 2 SLICEs
+      Net count_0__N_396: 17 loads, 17 SLICEs
+      Net vga_inst.valid_N_720: 1 loads, 1 SLICEs
+      Net music_inst.div_0__N_332: 4 loads, 4 SLICEs
+      Net music_inst.reset_div: 18 loads, 18 SLICEs
+      Net NESControllers.NEScount_0__N_322: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net pixel_y[3]: 296 loads
-      Net pixel_y[4]: 232 loads
-      Net pixel_y[5]: 222 loads
-      Net pixel_x[3]: 167 loads
-      Net pixel_x[4]: 163 loads
-      Net pixel_x[5]: 161 loads
-      Net pixel_y[6]: 129 loads
-      Net pixel_y[7]: 129 loads
-      Net pixel_x[6]: 119 loads
-      Net pixel_y[8]: 118 loads
+      Net pixel_y[3]: 261 loads
+      Net pixel_y[4]: 218 loads
+      Net pixel_y[5]: 193 loads
+      Net pixel_x[3]: 169 loads
+      Net pixel_x[4]: 168 loads
+      Net pixel_x[5]: 166 loads
+      Net pixel_y[6]: 139 loads
+      Net pixel_y[7]: 137 loads
+      Net pixel_x[6]: 122 loads
+      Net VCC_net: 122 loads
 
 
 
@@ -159,8 +158,8 @@ WARNING &lt;1026001&gt; - map:
      matched &apos;start_pressed&apos;.
 WARNING &lt;1027013&gt; - map: No port matched &apos;start_pressed&apos;.
 WARNING &lt;1014301&gt; - map: Can&apos;t resolve object &apos;start_pressed&apos; in constraint
-
      &apos;ldc_set_location -site {18} [get_ports start_pressed]&apos;.
+
 WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {18}
      [get_ports start_pressed]&apos;.
 
@@ -221,8 +220,8 @@ PLL 1:                                 Pin/Node Value
   Output Clock(GlobalA):               NODE     outglobal_o
   Output Clock(CoreB):                          NONE
   Output Clock(GlobalB):                        NONE
-
   Feedback input:                      NODE
+
        pll_inst.lscc_pll_inst.feedback_w
   Internal Feedback output:            NODE
        pll_inst.lscc_pll_inst.feedback_w
@@ -274,15 +273,15 @@ Instance Name: pattern_inst/myscore/num1_disp_inst/mapped_xpos_2__I_0_5
          Type: EBR
 Instance Name: pattern_inst/myscore/num0_disp_inst/mapped_xpos_2__I_0_4
          Type: EBR
-Instance Name: vga_inst/HSYNC_c_I_0
-         Type: IOLOGIC
 Instance Name: vga_inst/VSYNC_c_I_0
+         Type: IOLOGIC
+Instance Name: vga_inst/HSYNC_c_I_0
          Type: IOLOGIC
 Instance Name: pll_inst/lscc_pll_inst/u_PLL_B
          Type: PLL
 Instance Name: NESControllers/data2_c_I_0
-
          Type: IOLOGIC
+
 Instance Name: NESControllers/data1_c_I_0
          Type: IOLOGIC
 
@@ -291,7 +290,7 @@ Instance Name: NESControllers/data1_c_I_0
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 ------------------
 
-   Total number of constraints: 17
+   Total number of constraints: 18
    Total number of constraints dropped: 1
 
 
@@ -301,7 +300,8 @@ Instance Name: NESControllers/data1_c_I_0
 
    Total CPU Time: 1 secs
    Total REAL Time: 2 secs
-   Peak Memory Usage: 93 MB
+   Peak Memory Usage: 108 MB
+
 
 
 

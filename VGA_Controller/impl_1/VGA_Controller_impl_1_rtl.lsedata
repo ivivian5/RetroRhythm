@@ -1,17 +1,19 @@
 <top name = "top"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
-    <clockitem name = "nesClk"  type = "net" />
-    <clockitem name = "pll"  type = "net" />
-    <clockitem name = "outglobal_o"  type = "net" />
     <clockitem name = "ref_clk_i"  type = "port" />
-    <clockitem name = "pll_inst/lscc_pll_inst/outglobalb_o"  type = "net" />
+    <clockitem name = "pll"  type = "net" />
+    <clockitem name = "nesClk"  type = "net" />
+    <clockitem name = "outglobal_o"  type = "net" />
+    <clockitem name = "score_clk"  type = "net" />
+    <clockitem name = "music_inst/clk_sec"  type = "net" />
     <clockitem name = "pll_inst/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "pll_inst/lscc_pll_inst/outglobalb_o"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 6
+    //  Number of Clocks processed: 8
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.

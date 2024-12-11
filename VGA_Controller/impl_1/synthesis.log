@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec 10 02:40:00 2024
+Tue Dec 10 04:17:59 2024
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f VGA_Controller_impl_1_lattice.synproj -gui -msgset Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/promote.xml 
@@ -146,6 +146,12 @@ VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_
 VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/top_out.vhd
 VHDL library = work
+VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/clk_divider.vhd
+VHDL library = work
+VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/music_decoder.vhd
+VHDL library = work
+VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/music.vhd
+VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrow_rom.vhd
 VHDL library = work
 VHDL design file = Z:/ES4/final_proj_git/RetroRhythm/VGA_Controller/source/impl_1/arrout_rom.vhd
@@ -219,7 +225,7 @@ Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/fsm.vhd
 
 INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/fsm.vhd(5): analyzing entity fsm. VHDL-1012
-INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/fsm.vhd(18): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/fsm.vhd(19): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/rom.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/rom.vhd
 
@@ -231,8 +237,8 @@ INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/so
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd
 
-INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(584): analyzing entity arrows. VHDL-1012
-INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(595): analyzing architecture synth. VHDL-1010
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(295): analyzing entity arrows. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrows_on2008.vhd(306): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/big_start_rom.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/big_start_rom.vhd
 
@@ -307,7 +313,7 @@ Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/hit_detect.vhd
 
 INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/hit_detect.vhd(6): analyzing entity scoring. VHDL-1012
-INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/hit_detect.vhd(24): analyzing architecture synth. VHDL-1010
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/hit_detect.vhd(25): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/left_arr_rom.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/left_arr_rom.vhd
 
@@ -364,6 +370,21 @@ Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl
 
 INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/top_out.vhd(5): analyzing entity top_outline. VHDL-1012
 INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/top_out.vhd(14): analyzing architecture sim. VHDL-1010
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd. VHDL-1481
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd
+
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd(5): analyzing entity clk_divider. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/clk_divider.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd. VHDL-1481
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd
+
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd(5): analyzing entity music_decoder. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music_decoder.vhd(12): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd. VHDL-1481
+Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd
+
+INFO <35921012> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd(5): analyzing entity music. VHDL-1012
+INFO <35921010> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/music.vhd(14): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd. VHDL-1481
 Analyzing VHDL file z:/es4/final_proj_git/retrorhythm/vga_controller/source/impl_1/arrow_rom.vhd
 
@@ -415,6 +436,7 @@ WARNING <35001771> - synthesis: Initial value found on net start will be ignored
 WARNING <35001771> - synthesis: Initial value found on net restart will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net endgame will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net music_on will be ignored due to unrecognized driver type
+WARNING <35001771> - synthesis: Initial value found on net endsong will be ignored due to unrecognized driver type
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
 WARNING <35931002> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller/mypll/rtl/mypll.v(139): net \pll_inst/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
@@ -425,6 +447,7 @@ WARNING <35931002> - synthesis: z:/es4/final_proj_git/retrorhythm/vga_controller
 
 
 CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/leftarr_inst/data is stuck at One
+CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/downarr_inst/data is stuck at One
 CRITICAL <35001747> - synthesis: Bit 5 of Register \pattern_inst/mytopout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 4 of Register \pattern_inst/mytopout/data is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 1 of Register \pattern_inst/mytopout/data is stuck at Zero
@@ -439,12 +462,11 @@ CRITICAL <35001747> - synthesis: Bit 4 of Register \pattern_inst/myleftout/data 
 CRITICAL <35001747> - synthesis: Bit 1 of Register \pattern_inst/myleftout/data is stuck at Zero
 CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/uparr_inst/data is stuck at One
 CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/rightarr_inst/data is stuck at One
-CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/downarr_inst/data is stuck at One
 CRITICAL <35001748> - synthesis: Bit 0 of Register \pattern_inst/myscore/num7_disp_inst/data is stuck at One
 WARNING <35935040> - synthesis: Register \arrows_inst/my_right_arr_ypos__i0 clock is stuck at Zero. VDB-5040
 WARNING <35935040> - synthesis: Register \arrows_inst/my_top_arr_ypos__i0 clock is stuck at Zero. VDB-5040
-WARNING <35935040> - synthesis: Register \arrows_inst/my_down_arr_ypos__i0 clock is stuck at Zero. VDB-5040
 WARNING <35935040> - synthesis: Register \arrows_inst/my_left_arr_ypos__i0 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \arrows_inst/my_down_arr_ypos__i0 clock is stuck at Zero. VDB-5040
 Duplicate register/latch removal. \pattern_inst/downarr_inst/data_i3 is a one-to-one match with \pattern_inst/downarr_inst/data_i2.
 Duplicate register/latch removal. \pattern_inst/rightarr_inst/data_i3 is a one-to-one match with \pattern_inst/rightarr_inst/data_i2.
 Duplicate register/latch removal. \pattern_inst/uparr_inst/data_i3 is a one-to-one match with \pattern_inst/uparr_inst/data_i2.
@@ -461,49 +483,46 @@ Duplicate register/latch removal. \pattern_inst/myscore/num7_disp_inst/data_i3 i
 INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 378 of 5280 (7 % )
+Number of register bits => 514 of 5280 (9 % )
 EBR_B => 11
-CCU2 => 179
-FD1P3XZ => 378
+CCU2 => 247
+FD1P3XZ => 514
 IB => 3
 IOL_B => 4
-LUT4 => 2317
+LUT4 => 3319
 OB => 12
 PLL_B => 1
 ################### End Area Report ##################
 Number of odd-length carry chains : 10
-Number of even-length carry chains : 18
-
-################### Begin BlackBox Report ######################
-music => 1
-################### End BlackBox Report ##################
+Number of even-length carry chains : 22
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 4
+Number of Clocks: 5
   Net : pll_inst/lscc_pll_inst/outglobal_o, loads : 0
-  Net : ref_clk_i_c, loads : 1
   Net : NESControllers/nesClk_c, loads : 1
+  Net : score_clk_inst/score_clk, loads : 1
+  Net : ref_clk_i_c, loads : 1
   Net : pll_inst/lscc_pll_inst/pll_c, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vga_inst/pixel_y[3], loads : 270
-  Net : vga_inst/pixel_y[4], loads : 203
-  Net : vga_inst/pixel_y[5], loads : 192
-  Net : vga_inst/pixel_x[5], loads : 154
-  Net : vga_inst/pixel_x[3], loads : 154
-  Net : vga_inst/pixel_x[4], loads : 148
-  Net : vga_inst/pixel_y[7], loads : 128
-  Net : vga_inst/pixel_y[6], loads : 125
-  Net : vga_inst/pixel_y[8], loads : 116
-  Net : vga_inst/pixel_x[6], loads : 115
+  Net : vga_inst/pixel_y[3], loads : 222
+  Net : vga_inst/pixel_y[4], loads : 177
+  Net : vga_inst/pixel_y[5], loads : 153
+  Net : vga_inst/pixel_x[5], loads : 152
+  Net : vga_inst/pixel_x[3], loads : 150
+  Net : vga_inst/pixel_x[4], loads : 147
+  Net : vga_inst/pixel_y[6], loads : 137
+  Net : vga_inst/pixel_y[7], loads : 135
+  Net : vga_inst/pixel_x[6], loads : 121
+  Net : vga_inst/pixel_y[8], loads : 119
 ################### End Clock Report ##################
 
-Peak Memory Usage: 665 MB
+Peak Memory Usage: 1067 MB
 
 --------------------------------------------------------------
-Total CPU Time: 20 secs 
-Total REAL Time: 30 secs 
+Total CPU Time: 33 secs 
+Total REAL Time: 49 secs 
 --------------------------------------------------------------

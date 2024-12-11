@@ -112,6 +112,7 @@ architecture synth of top is
 	component scoring is
 	port(
 		score_clk : in std_logic;
+		reset : in std_logic;
 		
 		p1_keyhit : in std_logic_vector(3 downto 0);
 		p2_keyhit : in std_logic_vector(3 downto 0);
@@ -250,13 +251,14 @@ begin
 	scoring_inst : scoring
 		port map(
 			score_clk => score_clk,
+			reset => endsong,
 			p1_keyhit => controller1,
 			p2_keyhit => controller2,
 			arrows_spawned => arrows_spawned,
 			left_arr_ypos => left_arr_ypos,
-			top_arr_ypos => left_arr_ypos,
-			right_arr_ypos => left_arr_ypos,
-			down_arr_ypos => left_arr_ypos,
+			top_arr_ypos => top_arr_ypos,
+			right_arr_ypos => right_arr_ypos,
+			down_arr_ypos => down_arr_ypos,
 			p1_score => p1_score,
 			p2_score => p2_score
 		);
@@ -264,7 +266,7 @@ begin
 	score_clk_inst : clk_divider
 		port map(
 			clk_in => outglobal_o,
-			div_num => 842333,
+			div_num => 971923,
 			reset => '0',
 			clk_out => score_clk
 		);

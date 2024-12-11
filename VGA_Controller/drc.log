@@ -1,7 +1,5 @@
-DRC: Design Rule Check Radiant Software (64-bit) 2024.1.0.34.2
-Sun Dec  8 22:16:10 2024
+DRC: Design Rule Check Radiant Software (64-bit) 2023.1.0.43.3
+Tue Dec 10 03:28:07 2024
 
-Starting: parse design source files
-INFO <2049992> - C:/Users/jonekath/my_designs/VGA_Controller/source/impl_1/top.vhd(20,14-20,19) (VHDL-1201) re-analyze unit 'synth' since unit 'mypll_uniq_1' is overwritten or removed
 WARNING <1027013> - No port matched 'start_pressed'.
-WARNING <1026001> - C:/Users/jonekath/my_designs/VGA_Controller/pins.pdc (12) : Can't resolve object 'start_pressed' in constraint 'ldc_set_location -site {18} [get_ports start_pressed]'.
+WARNING <1014301> - Can't resolve object 'start_pressed' in constraint 'ldc_set_location -site {18} [get_ports start_pressed]'.
